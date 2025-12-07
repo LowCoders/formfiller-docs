@@ -79,15 +79,15 @@ A schema világos, deklaratív szabályokat határoz meg:
 
 A FormFiller beépített AI funkciója képes természetes nyelvű leírásból működő űrlapot generálni:
 
-```
-Felhasználó: "Készíts egy alkalmazotti adatlapot személyes adatokkal, 
-             elérhetőségekkel és munkaviszony adatokkal. A fizetés csak 
-             HR-eseknek legyen látható."
-
-     │
-     ▼
-
-AI feldolgozás → Schema generálás → Validálás → Működő űrlap
+```mermaid
+flowchart LR
+    U["👤 Felhasználó<br/>'Készíts egy alkalmazotti adatlapot<br/>személyes adatokkal...'"]
+    AI["🤖 AI feldolgozás"]
+    SG["📝 Schema generálás"]
+    V["✅ Validálás"]
+    F["📋 Működő űrlap"]
+    
+    U --> AI --> SG --> V --> F
 ```
 
 **Hogyan működik:**

@@ -4,26 +4,37 @@ A FormFiller támogatja a több bérlős (multi-tenant) működést, ahol egyetl
 
 ## Multisite Architektúra a Frontend-en
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      FRONTEND ALKALMAZÁS                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │                  SITE CONTEXT                        │   │
-│  │   currentSite │ availableSites │ switchSite         │   │
-│  └───────────────────────────┬─────────────────────────┘   │
-│                              │                              │
-│          ┌───────────────────┼───────────────────┐         │
-│          ▼                   ▼                   ▼         │
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    │
-│  │   Site A    │    │   Site B    │    │   Site C    │    │
-│  │  Adatok     │    │   Adatok    │    │   Adatok    │    │
-│  │  Configok   │    │   Configok  │    │   Configok  │    │
-│  │  Users      │    │   Users     │    │   Users     │    │
-│  └─────────────┘    └─────────────┘    └─────────────┘    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph App["FRONTEND ALKALMAZÁS"]
+        subgraph SC["SITE CONTEXT"]
+            CS[currentSite]
+            AS[availableSites]
+            SW[switchSite]
+        end
+        
+        SC --> Sites
+        
+        subgraph Sites["SITE-OK"]
+            subgraph SA["Site A"]
+                SA1[Adatok]
+                SA2[Configok]
+                SA3[Users]
+            end
+            
+            subgraph SB["Site B"]
+                SB1[Adatok]
+                SB2[Configok]
+                SB3[Users]
+            end
+            
+            subgraph SCC["Site C"]
+                SC1[Adatok]
+                SC2[Configok]
+                SC3[Users]
+            end
+        end
+    end
 ```
 
 ## Site Azonosítás
