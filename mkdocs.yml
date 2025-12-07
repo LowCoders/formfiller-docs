@@ -1,0 +1,108 @@
+site_name: FormFiller Dokumentáció
+site_description: Modern, konfigurálható űrlapkezelő rendszer dokumentációja
+site_author: FormFiller Team
+
+# Repository
+repo_name: formfiller-docs
+repo_url: https://github.com/LowCoders/formfiller-docs
+
+# Theme configuration
+theme:
+  name: material
+  language: hu
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Sötét mód
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Világos mód
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      lang: hu
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+# Navigation
+nav:
+  - Főoldal: README.md
+  - Architektúra: ARCHITECTURE.md
+  - Összehasonlítás: COMPARISON.md
+  - Roadmap: ROADMAP.md
+  - Fejlesztői Dokumentáció:
+    - Áttekintés: developer/README.md
+    - Backend: developer/backend.md
+    - Frontend: developer/frontend.md
+    - Schema: developer/schema.md
+    - API Referencia: developer/api-reference.md
+    - Eseménykezelés: developer/event-handling.md
+    - Űrlap Komponensek: developer/form-components.md
+    - Validáció: developer/validation.md
+    - Funkciók:
+      - AI Interfész: developer/features/ai-interface.md
+      - Adatkezelés: developer/features/data-management.md
+      - Multisite: developer/features/multisite.md
+      - RBAC: developer/features/rbac.md
+      - Témázás: developer/features/theming.md
+      - Felhasználókezelés: developer/features/user-management.md
+      - Workflow: developer/features/workflow.md
+  - Felhasználói Dokumentáció:
+    - Áttekintés: user/README.md
+    - Kezdő Lépések: user/getting-started.md
+    - Űrlap Konfiguráció: user/form-configuration.md
+    - Adminisztrációs Útmutató: user/admin-guide.md
+  - Telepítés:
+    - Áttekintés: deployment/README.md
+    - Hagyományos (VPS): deployment/traditional.md
+    - Docker: deployment/docker.md
+    - Kubernetes: deployment/kubernetes.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LowCoders
+
