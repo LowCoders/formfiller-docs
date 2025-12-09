@@ -1,6 +1,6 @@
 # FormFiller Documentation
 
-> This documentation is also available in [Hungarian](/hu/).
+> This documentation is also available in [Hungarian](/formfiller-docs/hu/).
 
 FormFiller is a modern, configurable form management system that enables the creation and management of dynamic forms, data grids, and tree structures based on JSON schema.
 
