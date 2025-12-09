@@ -84,7 +84,7 @@ A legfontosabb környezeti változók:
 | `GOOGLE_CLIENT_SECRET` | Google OAuth secret | (opcionális) |
 | `REDIS_URL` | Redis kapcsolati string | (opcionális) |
 
-A teljes lista: [Environment Variables](../../formfiller-deployment/docs/ENVIRONMENT_VARIABLES.md)
+A teljes lista: Lásd a formfiller-deployment repót (hamarosan elérhető)
 
 ## Multisite Beállítások
 
@@ -163,7 +163,5 @@ kubectl logs <pod-name> -n formfiller-multisite
 
 ## További Dokumentáció
 
-- [formfiller-deployment repo](../../formfiller-deployment)
-- [Helm Chart README](../../formfiller-deployment/helm-chart/README.md)
-- [CI/CD Guide](../../formfiller-deployment/docs/CI_CD_GUIDE.md)
+- [formfiller-deployment repo](https://github.com/LowCoders/formfiller-deployment) (hamarosan elérhető)
 

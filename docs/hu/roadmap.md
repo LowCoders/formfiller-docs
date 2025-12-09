@@ -409,9 +409,9 @@ A nyílt forráskódú projekt lehetőséget ad közösségi fejlesztésekre:
 
 ## Kapcsolódó Dokumentációk
 
-- [README](./README.md) - Projekt áttekintés
-- [Összehasonlítások](./COMPARISON.md) - Rendszer összehasonlítások
-- [Architektúra](./ARCHITECTURE.md) - Rendszer felépítés
+- [Főoldal](./index.md) - Projekt áttekintés
+- [Összehasonlítások](./comparison.md) - Rendszer összehasonlítások
+- [Architektúra](./architecture.md) - Rendszer felépítés
 - [Schema](./developer/schema.md) - Low-code definíciós nyelv
 - [Workflow](./developer/features/workflow.md) - Workflow kezelés
 

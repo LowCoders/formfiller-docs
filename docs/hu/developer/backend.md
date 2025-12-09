@@ -43,7 +43,6 @@ flowchart TB
     style BS fill:#ccffcc,stroke:#00cc00
 ```
 
-> 📊 Draw.io forrás: [diagrams/architecture/service-layer.drawio](../diagrams/architecture/service-layer.drawio)
 
 ### Főbb Előnyök
 
@@ -161,7 +160,6 @@ sequenceDiagram
     DS-->>C: { success, dataId, computedResults }
 ```
 
-> 📊 Draw.io forrás: [diagrams/flows/data-save.drawio](../diagrams/flows/data-save.drawio)
 
 ### 2. Workflow Végrehajtás Folyamata
 
@@ -205,7 +203,6 @@ flowchart TB
     style RESP fill:#ccffcc,stroke:#00cc00
 ```
 
-> 📊 Draw.io forrás: [diagrams/flows/workflow-execution.drawio](../diagrams/flows/workflow-execution.drawio)
 
 ### 3. Config Lekérés Cachelt Folyamata
 

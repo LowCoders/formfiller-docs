@@ -1,5 +1,5 @@
-site_name: FormFiller Dokumentáció
-site_description: Modern, konfigurálható űrlapkezelő rendszer dokumentációja
+site_name: FormFiller Documentation
+site_description: Modern, configurable form management system documentation
 site_author: FormFiller Team
 
 # Repository
@@ -9,20 +9,20 @@ repo_url: https://github.com/LowCoders/formfiller-docs
 # Theme configuration
 theme:
   name: material
-  language: hu
+  language: en
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Sötét mód
+        name: Dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Világos mód
+        name: Light mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -37,8 +37,49 @@ theme:
 
 # Plugins
 plugins:
-  - search:
-      lang: hu
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: hu
+          name: Magyar
+          build: true
+          site_name: FormFiller Dokumentáció
+          nav_translations:
+            Home: Főoldal
+            Architecture: Architektúra
+            Comparison: Összehasonlítás
+            Roadmap: Roadmap
+            Developer Documentation: Fejlesztői Dokumentáció
+            Overview: Áttekintés
+            Backend: Backend
+            Frontend: Frontend
+            Schema: Schema
+            API Reference: API Referencia
+            Event Handling: Eseménykezelés
+            Form Components: Űrlap Komponensek
+            Validation: Validáció
+            Features: Funkciók
+            AI Interface: AI Interfész
+            Data Management: Adatkezelés
+            Multisite: Multisite
+            RBAC: RBAC
+            Theming: Témázás
+            User Management: Felhasználókezelés
+            Workflow: Workflow
+            User Documentation: Felhasználói Dokumentáció
+            Getting Started: Kezdő Lépések
+            Form Configuration: Űrlap Konfiguráció
+            Admin Guide: Adminisztrációs Útmutató
+            Deployment: Telepítés
+            Traditional (VPS): Hagyományos (VPS)
+            Docker: Docker
+            Kubernetes: Kubernetes
+  - search
 
 # Markdown extensions
 markdown_extensions:
@@ -68,35 +109,35 @@ markdown_extensions:
 
 # Navigation
 nav:
-  - Főoldal: README.md
-  - Architektúra: ARCHITECTURE.md
-  - Összehasonlítás: COMPARISON.md
-  - Roadmap: ROADMAP.md
-  - Fejlesztői Dokumentáció:
-    - Áttekintés: developer/README.md
+  - Home: index.md
+  - Architecture: architecture.md
+  - Comparison: comparison.md
+  - Roadmap: roadmap.md
+  - Developer Documentation:
+    - Overview: developer/index.md
     - Backend: developer/backend.md
     - Frontend: developer/frontend.md
     - Schema: developer/schema.md
-    - API Referencia: developer/api-reference.md
-    - Eseménykezelés: developer/event-handling.md
-    - Űrlap Komponensek: developer/form-components.md
-    - Validáció: developer/validation.md
-    - Funkciók:
-      - AI Interfész: developer/features/ai-interface.md
-      - Adatkezelés: developer/features/data-management.md
+    - API Reference: developer/api-reference.md
+    - Event Handling: developer/event-handling.md
+    - Form Components: developer/form-components.md
+    - Validation: developer/validation.md
+    - Features:
+      - AI Interface: developer/features/ai-interface.md
+      - Data Management: developer/features/data-management.md
       - Multisite: developer/features/multisite.md
       - RBAC: developer/features/rbac.md
-      - Témázás: developer/features/theming.md
-      - Felhasználókezelés: developer/features/user-management.md
+      - Theming: developer/features/theming.md
+      - User Management: developer/features/user-management.md
       - Workflow: developer/features/workflow.md
-  - Felhasználói Dokumentáció:
-    - Áttekintés: user/README.md
-    - Kezdő Lépések: user/getting-started.md
-    - Űrlap Konfiguráció: user/form-configuration.md
-    - Adminisztrációs Útmutató: user/admin-guide.md
-  - Telepítés:
-    - Áttekintés: deployment/README.md
-    - Hagyományos (VPS): deployment/traditional.md
+  - User Documentation:
+    - Overview: user/index.md
+    - Getting Started: user/getting-started.md
+    - Form Configuration: user/form-configuration.md
+    - Admin Guide: user/admin-guide.md
+  - Deployment:
+    - Overview: deployment/index.md
+    - Traditional (VPS): deployment/traditional.md
     - Docker: deployment/docker.md
     - Kubernetes: deployment/kubernetes.md
 
@@ -105,4 +146,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/LowCoders
-
+  alternate:
+    - name: English
+      link: /formfiller-docs/
+      lang: en
+    - name: Magyar
+      link: /formfiller-docs/hu/
+      lang: hu

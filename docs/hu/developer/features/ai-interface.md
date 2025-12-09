@@ -48,7 +48,6 @@ flowchart TB
     style FORM fill:#ccffcc,stroke:#00cc00
 ```
 
-> 📊 Draw.io forrás: [diagrams/flows/ai-generation.drawio](../../diagrams/flows/ai-generation.drawio)
 
 ## Használati Útmutató
 

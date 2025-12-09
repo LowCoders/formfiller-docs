@@ -35,7 +35,6 @@ flowchart TB
     style schema fill:#e6f3ff,stroke:#0066cc
 ```
 
-> 📊 Draw.io forrás: [diagrams/schema/schema-role.drawio](../diagrams/schema/schema-role.drawio)
 
 ### Single Source of Truth
 

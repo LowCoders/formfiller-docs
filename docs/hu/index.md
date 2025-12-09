@@ -1,5 +1,7 @@
 # FormFiller Dokumentáció
 
+> A dokumentáció [angol nyelven](/) is elérhető.
+
 A FormFiller egy modern, konfigurálható űrlapkezelő rendszer, amely lehetővé teszi dinamikus űrlapok, adatrácsok és fa struktúrák létrehozását és kezelését JSON séma alapján.
 
 ## Motiváció
@@ -117,7 +119,7 @@ A FormFiller megfelel Saint-Exupéry elvének, mert:
 3. **Nincs boilerplate kód**: A rendszer generálja ami szükséges
 4. **Nincs lock-in**: Nyílt forráskód, saját infrastruktúra
 
-Részletes összehasonlítás más rendszerekkel: [COMPARISON.md](./COMPARISON.md)
+Részletes összehasonlítás más rendszerekkel: [Összehasonlítások](./comparison.md)
 
 ---
 
@@ -127,12 +129,12 @@ A FormFiller egy multisite képes alkalmazás, amely a következő fő komponens
 
 | Komponens | Leírás | Technológia |
 |-----------|--------|-------------|
-| [Backend](../formfiller-backend) | REST API és üzleti logika | Node.js, TypeScript, Express, MongoDB |
-| [Frontend](../formfiller-frontend) | Felhasználói felület | React, TypeScript, DevExtreme |
-| [Schema](../formfiller-schema) | Közös típusok és validáció | TypeScript, JSON Schema |
-| [Validator](../formfiller-validator) | Fejlett validációs rendszer | TypeScript |
-| [Types](../formfiller-types) | Közös típus definíciók | TypeScript |
-| [Deployment](../formfiller-deployment) | Telepítési konfigurációk | Helm, Kubernetes, Docker |
+| [Backend](https://github.com/LowCoders/formfiller-backend) (hamarosan elérhető) | REST API és üzleti logika | Node.js, TypeScript, Express, MongoDB |
+| [Frontend](https://github.com/LowCoders/formfiller-frontend) (hamarosan elérhető) | Felhasználói felület | React, TypeScript, DevExtreme |
+| [Schema](https://github.com/LowCoders/formfiller-schema) (hamarosan elérhető) | Közös típusok és validáció | TypeScript, JSON Schema |
+| [Validator](https://github.com/LowCoders/formfiller-validator) (hamarosan elérhető) | Fejlett validációs rendszer | TypeScript |
+| [Types](https://github.com/LowCoders/formfiller-types) (hamarosan elérhető) | Közös típus definíciók | TypeScript |
+| [Deployment](https://github.com/LowCoders/formfiller-deployment) (hamarosan elérhető) | Telepítési konfigurációk | Helm, Kubernetes, Docker |
 
 ## Fő Funkciók
 
@@ -183,7 +185,7 @@ Eredmény: 2-3 perc alatt működő rendszer
 
 ## Dokumentáció Struktúra
 
-### [Fejlesztői Dokumentáció](./developer/README.md)
+### [Fejlesztői Dokumentáció](./developer/index.md)
 
 - Backend fejlesztés
 - Frontend fejlesztés
@@ -192,25 +194,25 @@ Eredmény: 2-3 perc alatt működő rendszer
 - Eseménykezelés
 - Validáció
 
-### [Felhasználói Dokumentáció](./user/README.md)
+### [Felhasználói Dokumentáció](./user/index.md)
 
 - Kezdő lépések
 - Űrlap konfiguráció
 - Adminisztráció
 
-### [Telepítési Dokumentáció](./deployment/README.md)
+### [Telepítési Dokumentáció](./deployment/index.md)
 
 - Hagyományos (VPS) telepítés
 - Docker telepítés
 - Kubernetes telepítés
 
-### [Összehasonlítások](./COMPARISON.md)
+### [Összehasonlítások](./comparison.md)
 
 - MVC/MVP rendszerekkel való összehasonlítás
 - Form builder szolgáltatások összehasonlítása
 - Összegző táblázat csillagos értékeléssel
 
-### [Továbbfejlesztési Lehetőségek](./ROADMAP.md)
+### [Továbbfejlesztési Lehetőségek](./roadmap.md)
 
 - AI és gépi tanulás fejlesztések
 - Vizuális szerkesztő és kollaboráció
@@ -219,7 +221,7 @@ Eredmény: 2-3 perc alatt működő rendszer
 
 ## Architektúra
 
-A rendszer felépítésének részletes leírása: [ARCHITECTURE.md](./ARCHITECTURE.md)
+A rendszer felépítésének részletes leírása: [Architektúra](./architecture.md)
 
 ## Gyors Indítás
 

@@ -369,8 +369,8 @@ Egy egyszerű "User" entitás hagyományos MVC-ben:
 
 ## Kapcsolódó Dokumentációk
 
-- [README](./README.md) - Projekt áttekintés és motiváció
-- [Architektúra](./ARCHITECTURE.md) - Rendszer felépítés
-- [Továbbfejlesztési Lehetőségek](./ROADMAP.md) - Fejlesztési irányok
+- [Főoldal](./index.md) - Projekt áttekintés és motiváció
+- [Architektúra](./architecture.md) - Rendszer felépítés
+- [Továbbfejlesztési Lehetőségek](./roadmap.md) - Fejlesztési irányok
 - [Schema](./developer/schema.md) - Low-code definíciós nyelv
 - [Workflow](./developer/features/workflow.md) - Workflow kezelés
