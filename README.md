@@ -52,6 +52,11 @@ formfiller-docs/
 └── README.md        # This file
 ```
 
+## Source Files
+
+- 🇬🇧 [English documentation](docs/en/index.md)
+- 🇭🇺 [Magyar dokumentáció](docs/hu/index.md)
+
 ## License
 
 MIT
