@@ -1,6 +1,6 @@
 # FormFiller Documentation
 
-MkDocs Material documentation for the FormFiller form management system.
+MkDocs Material documentation for the FormFiller low-code framework.
 
 ## Documentation
 

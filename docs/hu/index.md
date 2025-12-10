@@ -2,7 +2,7 @@
 
 > A dokumentáció [angol nyelven](/formfiller-docs/) is elérhető.
 
-A FormFiller egy modern, konfigurálható űrlapkezelő rendszer, amely lehetővé teszi dinamikus űrlapok, adatrácsok és fa struktúrák létrehozását és kezelését JSON séma alapján.
+A FormFiller egy moduláris, multisite képes low-code keretrendszer, amely jelenleg űrlapkezelésre fókuszáló megvalósítással rendelkezik. Lehetővé teszi dinamikus űrlapok, adatrácsok és fa struktúrák létrehozását és kezelését JSON séma alapján.
 
 ## Motiváció
 

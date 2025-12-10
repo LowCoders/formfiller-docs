@@ -10,7 +10,7 @@ This documentation is intended for end users and administrators of the FormFille
 
 ## System Overview
 
-FormFiller is a dynamic form management system that enables:
+FormFiller is a dynamic low-code framework that currently provides:
 
 - **Creating forms** - Based on JSON configuration
 - **Collecting data** - Storing and managing submitted data

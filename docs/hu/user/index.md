@@ -10,7 +10,7 @@ Ez a dokumentáció a FormFiller rendszer végfelhasználóinak és adminisztrá
 
 ## Rendszer Áttekintés
 
-A FormFiller egy dinamikus űrlapkezelő rendszer, amely lehetővé teszi:
+A FormFiller egy dinamikus low-code keretrendszer, amely jelenleg az alábbi funkciókat biztosítja:
 
 - **Űrlapok létrehozását** - JSON konfiguráció alapján
 - **Adatok gyűjtését** - Beküldött adatok tárolása és kezelése

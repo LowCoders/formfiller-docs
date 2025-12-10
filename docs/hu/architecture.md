@@ -2,7 +2,7 @@
 
 ## Rendszer Áttekintés
 
-A FormFiller egy moduláris, multisite képes űrlapkezelő rendszer. Az alábbi diagram mutatja a fő komponensek kapcsolatát:
+A FormFiller egy moduláris, multisite képes low-code keretrendszer, amely jelenleg űrlapkezelésre fókuszáló megvalósítással rendelkezik. Az alábbi diagram mutatja a fő komponensek kapcsolatát:
 
 ```mermaid
 flowchart TB

@@ -2,7 +2,7 @@
 
 ## System Overview
 
-FormFiller is a modular, multisite-capable form management system. The following diagram shows the relationship between the main components:
+FormFiller is a modular, multisite-capable low-code framework with a current focus on form management. The following diagram shows the relationship between the main components:
 
 ```mermaid
 flowchart TB
