@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/"/>
+    </url>
+    <url>
+        <loc>Nonearchitecture/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonearchitecture/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/architecture/"/>
+    </url>
+    <url>
+        <loc>Nonecomparison/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonecomparison/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/comparison/"/>
+    </url>
+    <url>
+        <loc>Noneroadmap/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneroadmap/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/roadmap/"/>
+    </url>
+    <url>
+        <loc>Nonedeployment/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/"/>
+    </url>
+    <url>
+        <loc>Nonedeployment/docker/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/docker/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/docker/"/>
+    </url>
+    <url>
+        <loc>Nonedeployment/kubernetes/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/kubernetes/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/kubernetes/"/>
+    </url>
+    <url>
+        <loc>Nonedeployment/traditional/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/traditional/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/traditional/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/api-reference/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/api-reference/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/api-reference/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/backend/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/backend/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/backend/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/event-handling/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/event-handling/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/event-handling/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/form-components/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/form-components/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/form-components/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/frontend/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/frontend/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/frontend/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/schema/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/schema/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/schema/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/validation/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/validation/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/validation/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/ai-interface/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/ai-interface/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/ai-interface/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/data-management/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/data-management/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/data-management/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/multisite/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/multisite/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/multisite/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/rbac/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/rbac/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/rbac/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/theming/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/theming/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/theming/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/user-management/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/user-management/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/user-management/"/>
+    </url>
+    <url>
+        <loc>Nonedeveloper/features/workflow/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/workflow/"/>
+    </url>
+    <url>
+        <loc>Noneuser/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/"/>
+    </url>
+    <url>
+        <loc>Noneuser/admin-guide/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/admin-guide/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/admin-guide/"/>
+    </url>
+    <url>
+        <loc>Noneuser/form-configuration/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/form-configuration/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/form-configuration/"/>
+    </url>
+    <url>
+        <loc>Noneuser/getting-started/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/getting-started/"/>
+    </url>
+    <url>
+        <loc>Nonehu/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+    </url>
+    <url>
+        <loc>Nonehu/architecture/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonearchitecture/"/>
+    </url>
+    <url>
+        <loc>Nonehu/comparison/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/comparison/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonecomparison/"/>
+    </url>
+    <url>
+        <loc>Nonehu/roadmap/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/roadmap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneroadmap/"/>
+    </url>
+    <url>
+        <loc>Nonehu/deployment/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/"/>
+    </url>
+    <url>
+        <loc>Nonehu/deployment/docker/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/docker/"/>
+    </url>
+    <url>
+        <loc>Nonehu/deployment/kubernetes/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/kubernetes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/kubernetes/"/>
+    </url>
+    <url>
+        <loc>Nonehu/deployment/traditional/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/deployment/traditional/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeployment/traditional/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/api-reference/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/api-reference/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/api-reference/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/backend/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/backend/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/backend/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/event-handling/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/event-handling/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/event-handling/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/form-components/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/form-components/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/form-components/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/frontend/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/frontend/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/frontend/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/schema/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/schema/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/schema/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/validation/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/validation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/validation/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/ai-interface/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/ai-interface/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/ai-interface/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/data-management/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/data-management/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/data-management/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/multisite/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/multisite/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/multisite/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/rbac/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/rbac/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/rbac/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/theming/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/theming/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/theming/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/user-management/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/user-management/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/user-management/"/>
+    </url>
+    <url>
+        <loc>Nonehu/developer/features/workflow/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/developer/features/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonedeveloper/features/workflow/"/>
+    </url>
+    <url>
+        <loc>Nonehu/user/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/"/>
+    </url>
+    <url>
+        <loc>Nonehu/user/admin-guide/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/admin-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/admin-guide/"/>
+    </url>
+    <url>
+        <loc>Nonehu/user/form-configuration/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/form-configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/form-configuration/"/>
+    </url>
+    <url>
+        <loc>Nonehu/user/getting-started/</loc>
+        <lastmod>2025-12-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="hu" href="Nonehu/user/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneuser/getting-started/"/>
+    </url>
+</urlset>
