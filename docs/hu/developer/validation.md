@@ -620,3 +620,129 @@ A fordítás a `locales/` könyvtárban:
 }
 ```
 
+## CrossField Validáció (Új Formátum)
+
+A crossField validátorok több mező együttes validálását teszik lehetővé. Az új formátumban a típus közvetlenül jelzi a validátor típusát.
+
+### Elérhető CrossField Típusok
+
+| Típus | Leírás |
+|-------|--------|
+| `crossFieldEquals` | Mezők egyezőségét ellenőrzi |
+| `crossFieldNotEquals` | Mezők nem egyezőségét ellenőrzi |
+| `crossFieldGreaterThan` | Első mező > második mező |
+| `crossFieldLessThan` | Első mező < második mező |
+| `crossFieldSumEquals` | Mezők összege egyenlő egy értékkel |
+| `crossFieldPercentageSum` | Mezők összege 100% |
+| `crossFieldDateInRange` | Dátum más dátumok tartományában |
+| `crossFieldAtLeastOne` | Legalább egy mező kitöltve |
+| `crossFieldCustom` | Egyéni validátor |
+
+### Új Formátum Példa
+
+```json
+{
+  "name": "total_vacation_days",
+  "validationRules": [
+    {
+      "type": "crossFieldSumEquals",
+      "targetFields": ["base_vacation_days", "extra_vacation_days"],
+      "message": "Az összes szabadságnak egyeznie kell az alap + extra értékkel"
+    }
+  ]
+}
+```
+
+### Régi vs Új Formátum
+
+**Régi (továbbra is támogatott):**
+```json
+{
+  "type": "crossField",
+  "targetFields": ["password", "passwordConfirm"],
+  "crossFieldValidator": "passwordMatch",
+  "message": "A jelszavaknak egyezniük kell"
+}
+```
+
+**Új (ajánlott):**
+```json
+{
+  "type": "crossFieldEquals",
+  "targetFields": ["password", "passwordConfirm"],
+  "message": "A jelszavaknak egyezniük kell"
+}
+```
+
+### Automatikus Mező Hozzáadás
+
+Ha egy crossField validátort mező szinten definiálsz, az aktuális mező automatikusan bekerül a `targetFields` tömbbe:
+
+```json
+{
+  "name": "passwordConfirm",
+  "validationRules": [
+    {
+      "type": "crossFieldEquals",
+      "targetFields": ["password"],
+      "message": "A jelszavaknak egyezniük kell"
+    }
+  ]
+}
+```
+
+A `passwordConfirm` automatikusan bekerül a `targetFields` közé validáláskor.
+
+## Hibamegjelenítés Testreszabása
+
+### errorTarget Property
+
+Az `errorTarget` property segítségével megadhatod, hogy hol jelenjen meg a validációs hiba:
+
+| Érték | Leírás |
+|-------|--------|
+| `'currentField'` | Csak az aktuális mezőnél (mező szintű alapértelmezés) |
+| `'allTargetFields'` | Minden érintett mezőnél (form szintű alapértelmezés) |
+| `string[]` | Konkrét mező path-ok, ahol a hiba megjelenjen |
+
+```json
+{
+  "type": "crossFieldEquals",
+  "targetFields": ["field1", "field2", "field3"],
+  "message": "A mezőknek egyezniük kell",
+  "errorTarget": ["field1", "field3"]
+}
+```
+
+### Form Szintű Hibapanel
+
+A `FormPreferences`-ben beállítható, hogy a validációs hibák megjelenjenek-e az űrlap tetején (accordion formában):
+
+```json
+{
+  "preferences": {
+    "showErrorsOnFormLevel": true
+  }
+}
+```
+
+| Property | Típus | Alapérték | Leírás |
+|----------|-------|-----------|--------|
+| `showErrorsOnFormLevel` | `boolean` | `true` | Hibapanel megjelenítése az űrlap tetején |
+
+A form szintű hibák mindig accordion formában jelennek meg. Ha a hibát közvetlenül a mezőnél szeretnéd megjeleníteni, használd az `errorTarget` property-t a validációs szabályban.
+
+### Hierarchikus Címkék
+
+A form szintű hibamegjelenítésnél a mezők hierarchikus címkékkel jelennek meg:
+
+```
+⚠️ Validációs Hibák (3)
+
+• Személyes adatok > Lakcím > Irányítószám: Kötelező mező
+• Összeg Validáció > Összes szabadság: Az összegnek egyeznie kell
+• Kapcsolat > Email: Érvénytelen email formátum
+```
+
+A címkék a mező path-ja alapján épülnek fel, a `label`, `caption` vagy `name` property-k felhasználásával.
+
