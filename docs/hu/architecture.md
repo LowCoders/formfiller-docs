@@ -49,25 +49,50 @@ flowchart TB
 
 ### Frontend
 
-A frontend React és TypeScript alapú, DevExtreme UI komponenseket használ.
+A frontend React és TypeScript alapú, DevExtreme UI komponenseket használ. Az űrlap megjelenítési logika a `formfiller-embed` csomagba került a könnyebb újrafelhasználhatóság érdekében.
+
+**Fő modulok:**
+- **Pages**: Alkalmazás oldalak (Home, Form, Results, Admin)
+- **Contexts**: Autentikáció, Navigáció, Téma kontextusok
+- **Services**: API kommunikáció és üzleti logika
+
+**Könyvtárstruktúra:**
+```
+src/
+├── components/      # React komponensek
+│   ├── form/       # Űrlap wrapper komponensek
+│   └── views/      # Nézet komponensek (Grid, Tree)
+├── pages/          # Oldal komponensek
+├── services/       # API hívások
+├── contexts/       # React kontextusok
+└── utils/          # Segédfüggvények
+```
+
+### Embed Csomag (formfiller-embed)
+
+Újrafelhasználható űrlap megjelenítő könyvtár, amelyet a frontend használ, és külső integrációkhoz is elérhető.
 
 **Fő modulok:**
 - **Rendererek**: Űrlap megjelenítő motorok (DevExtreme, MUI, Print)
-- **Form Manager**: Központi állapotkezelő az űrlapokhoz
+- **FormManager**: Központi állapotkezelő specializált al-menedzserekkel
+  - **FormStateManager**: Űrlap adat és érték kezelés
+  - **FormValidationManager**: Validációs logika és hibakövetés
+  - **FormVisibilityManager**: Mező láthatóság és letiltott állapotok
 - **Event Handler Registry**: Eseménykezelő regisztráció és végrehajtás
 - **Field Update Services**: Mező frissítési logika
 
 **Könyvtárstruktúra:**
 ```
 src/
-├── components/      # React komponensek
-│   ├── form/       # Űrlap komponensek
-│   └── views/      # Nézet komponensek (Grid, Tree)
-├── services/       # Üzleti logika és API hívások
-├── factories/      # Renderer gyárak
-├── managers/       # Állapot menedzserek
-├── eventHandlers/  # Eseménykezelők
-└── contexts/       # React kontextusok
+├── components/      # React komponensek (EmbedForm, EmbedFormContainer)
+├── core/           # Core menedzserek (FormManager, FormStateManager, stb.)
+├── renderers/      # Renderer implementációk
+│   ├── DxRenderer/     # DevExtreme renderer
+│   ├── MuiRenderer/    # Material-UI renderer
+│   └── PrintRenderer/  # Print renderer
+├── eventHandlers/  # Eseménykezelő implementációk
+├── hooks/          # React hook-ok (useEmbedForm)
+└── services/       # Szolgáltatások (validáció, API)
 ```
 
 ### Backend

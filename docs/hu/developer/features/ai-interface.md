@@ -219,6 +219,25 @@ Az AI által generált schema azonnal használható:
 3. **Adatbázis tárolás** - A struktúra MongoDB-ben tárolható
 4. **Workflow integráció** - Workflow definíciók azonnal futtathatók
 
+## Technikai Architektúra
+
+Az AI generálás egy dedikált backend végpontot használ:
+
+```
+POST /api/ai/generate-stream
+```
+
+Főbb technikai jellemzők:
+
+- **Server-Sent Events (SSE)**: Valós idejű streaming a generált tartalomról
+- **Kétfázisú generálás**: Kategória detektálás + konfig generálás a jobb pontosságért
+- **Token költségvetés validáció**: Biztosítja, hogy a promptok beleférjenek a modell kontextus limitjébe
+- **Rate limiting**: Megakadályozza az API visszaélést (alapértelmezetten 10 kérés/perc)
+- **Retry mechanizmus**: Automatikus újrapróbálkozás exponenciális backoff-fal hiba esetén
+- **Példa-alapú tanulás**: Seed konfigurációkat használ kontextusként a generáláshoz
+
+Az AI szolgáltatás az `src/routes/ai-generation.ts` fájlban van implementálva, és az `AIGenerationService`-t használja az LLM integrációhoz.
+
 ## Példa: Teljes Munkafolyamat
 
 ```

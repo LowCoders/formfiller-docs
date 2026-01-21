@@ -63,15 +63,17 @@ export abstract class BaseService<T extends Document> {
   constructor(protected model: Model<T>) {}
 
   async findById(id: string): Promise<T | null>
-  async findOne(query: any): Promise<T | null>
-  async findAll(query: any = {}): Promise<T[]>
-  async create(data: Partial<T>): Promise<T>
-  async update(id: string, data: Partial<T>): Promise<T | null>
+  async findOne(query: Record<string, unknown>): Promise<T | null>
+  async findAll(query: Record<string, unknown> = {}): Promise<T[]>
+  async create(data: Record<string, unknown>): Promise<T>
+  async update(id: string, data: Record<string, unknown>): Promise<T | null>
   async delete(id: string): Promise<T | null>
-  async count(query: any = {}): Promise<number>
-  async exists(query: any): Promise<boolean>
+  async count(query: Record<string, unknown> = {}): Promise<number>
+  async exists(query: Record<string, unknown>): Promise<boolean>
 }
 ```
+
+> **Note:** The codebase has been refactored to reduce `any` usage. Most service methods now use `Record<string, unknown>` for better type safety.
 
 This ensures:
 - **DRY principle** - No need to reimplement CRUD operations in every service
@@ -117,8 +119,9 @@ src/
 ├── routes/              # API endpoints
 │   ├── auth.ts         # /api/auth/*
 │   ├── users.ts        # /api/users/*
-│   ├── config.ts       # /api/config/*
+│   ├── config-routes.ts # /api/config/*
 │   ├── data.ts         # /api/data/*
+│   ├── ai-generation.ts # /api/ai/* (AI config generation)
 │   ├── workflow.ts     # /api/workflow/*
 │   ├── roles.ts        # /api/roles/*
 │   └── permissions.ts  # /api/permissions/*

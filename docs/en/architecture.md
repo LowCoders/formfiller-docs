@@ -49,25 +49,50 @@ flowchart TB
 
 ### Frontend
 
-The frontend is React and TypeScript based, using DevExtreme UI components.
+The frontend is React and TypeScript based, using DevExtreme UI components. Form rendering logic is delegated to the `formfiller-embed` package for reusability.
+
+**Main modules:**
+- **Pages**: Application pages (Home, Form, Results, Admin)
+- **Contexts**: Authentication, Navigation, Theme contexts
+- **Services**: API communication and business logic
+
+**Directory structure:**
+```
+src/
+├── components/      # React components
+│   ├── form/       # Form wrapper components
+│   └── views/      # View components (Grid, Tree)
+├── pages/          # Page components
+├── services/       # API calls
+├── contexts/       # React contexts
+└── utils/          # Utility functions
+```
+
+### Embed Package (formfiller-embed)
+
+Reusable form rendering library used by the frontend and available for external integrations.
 
 **Main modules:**
 - **Renderers**: Form rendering engines (DevExtreme, MUI, Print)
-- **Form Manager**: Central state manager for forms
+- **FormManager**: Central state manager with specialized sub-managers
+  - **FormStateManager**: Form data and value management
+  - **FormValidationManager**: Validation logic and error tracking
+  - **FormVisibilityManager**: Field visibility and disabled states
 - **Event Handler Registry**: Event handler registration and execution
 - **Field Update Services**: Field update logic
 
 **Directory structure:**
 ```
 src/
-├── components/      # React components
-│   ├── form/       # Form components
-│   └── views/      # View components (Grid, Tree)
-├── services/       # Business logic and API calls
-├── factories/      # Renderer factories
-├── managers/       # State managers
-├── eventHandlers/  # Event handlers
-└── contexts/       # React contexts
+├── components/      # React components (EmbedForm, EmbedFormContainer)
+├── core/           # Core managers (FormManager, FormStateManager, etc.)
+├── renderers/      # Renderer implementations
+│   ├── DxRenderer/     # DevExtreme renderer
+│   ├── MuiRenderer/    # Material-UI renderer
+│   └── PrintRenderer/  # Print renderer
+├── eventHandlers/  # Event handler implementations
+├── hooks/          # React hooks (useEmbedForm)
+└── services/       # Services (validation, API)
 ```
 
 ### Backend
