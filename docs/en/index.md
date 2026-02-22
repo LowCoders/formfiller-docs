@@ -212,6 +212,15 @@ Result: Working system in 2-3 minutes
 - Form builder service comparison
 - Summary table with star ratings
 
+### [Applicability](./applicability/index.md)
+
+- Industry analysis (18 industries: healthcare, finance, public sector, education, HR, telco, grants, etc.)
+- Functional analysis (15+ functions: CRM, helpdesk, surveys, workflow, configurator, etc.)
+- Business evaluation (ROI, TCO, savings calculation)
+- Creative use cases
+- Extension possibilities
+- **[Analysis conclusion and SQL parallel](./applicability/index.md#analysis-conclusion)** - Key findings and IT-historical parallel
+
 ### [Future Development](./roadmap.md)
 
 - AI and machine learning improvements

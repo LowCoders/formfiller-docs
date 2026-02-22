@@ -10,20 +10,20 @@ A FormFiller workflow rendszere lehetővé teszi összetett üzleti folyamatok d
 
 A workflow egy automatizált folyamat, amely több lépésből áll. Ahelyett, hogy egyedi kódot írnánk minden üzleti folyamathoz, deklaratívan definiáljuk a lépéseket:
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Workflow Definíció                               │
-│                                                                          │
-│  ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐        │
-│  │  Step 1  │────→│  Step 2  │────→│  Step 3  │────→│  Step N  │        │
-│  │ validate │     │   save   │     │  notify  │     │   api    │        │
-│  └──────────┘     └──────────┘     └──────────┘     └──────────┘        │
-│       │                │                │                │               │
-│       └────────────────┴────────────────┴────────────────┘               │
-│                              │                                           │
-│                        Shared Context                                    │
-│                  { input, results, savedData }                           │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph workflow["Workflow Definíció"]
+        S1["Step 1<br/>validate"] --> S2["Step 2<br/>save"]
+        S2 --> S3["Step 3<br/>notify"]
+        S3 --> SN["Step N<br/>api"]
+        
+        S1 --> CTX
+        S2 --> CTX
+        S3 --> CTX
+        SN --> CTX
+        
+        CTX["Shared Context<br/>{ input, results, savedData }"]
+    end
 ```
 
 ### Mire Használható?
@@ -225,34 +225,34 @@ Input:                          Output:
 
 ### Hibakezelési Stratégiák
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         onError Stratégiák                               │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ "stop" - Azonnali leállás                                           │ │
-│  │                                                                      │ │
-│  │  Step 1 ─→ Step 2 ─→ Step 3 ❌ ─X─ Step 4                           │ │
-│  │                        ↓                                             │ │
-│  │                   Workflow FAIL                                      │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ "continue" - Folytatás a következő lépéssel                         │ │
-│  │                                                                      │ │
-│  │  Step 1 ─→ Step 2 ─→ Step 3 ⚠️ ─→ Step 4 ─→ SUCCESS                 │ │
-│  │                        ↓                                             │ │
-│  │                   (logged error)                                     │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ "rollback" - Visszavonás (limitált támogatás)                       │ │
-│  │                                                                      │ │
-│  │  Step 1 ←─ Step 2 ←─ Step 3 ❌                                       │ │
-│  │    ↓                                                                 │ │
-│  │  ROLLBACK                                                            │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph strategies["onError Stratégiák"]
+        subgraph stop["'stop' - Azonnali leállás"]
+            ST1["Step 1"] --> ST2["Step 2"]
+            ST2 --> ST3["Step 3 ❌"]
+            ST3 -.->|"X"| ST4["Step 4"]
+            ST3 --> FAIL["Workflow FAIL"]
+        end
+        
+        subgraph cont["'continue' - Folytatás"]
+            CO1["Step 1"] --> CO2["Step 2"]
+            CO2 --> CO3["Step 3 ⚠️"]
+            CO3 --> CO4["Step 4"]
+            CO4 --> SUCCESS["SUCCESS"]
+            CO3 -.-> LOG["(logged error)"]
+        end
+        
+        subgraph roll["'rollback' - Visszavonás"]
+            RO3["Step 3 ❌"] -.-> RO2["Step 2"]
+            RO2 -.-> RO1["Step 1"]
+            RO1 --> ROLLBACK["ROLLBACK"]
+        end
+    end
+    
+    style FAIL fill:#ffcccc,stroke:#cc0000
+    style SUCCESS fill:#ccffcc,stroke:#00cc00
+    style ROLLBACK fill:#fff3cd,stroke:#856404
 ```
 
 ### Workflow Szintű Hibakezelés
@@ -330,25 +330,29 @@ A `condition` mező lehetővé teszi lépések feltételes végrehajtását:
 
 ### Backoff Stratégiák
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Backoff Típusok                                  │
-│                                                                          │
-│  "fixed" - Fix időköz                                                    │
-│  ├─ Attempt 1: 0ms                                                       │
-│  ├─ Attempt 2: 1000ms                                                    │
-│  └─ Attempt 3: 1000ms                                                    │
-│                                                                          │
-│  "linear" - Lineárisan növekvő                                           │
-│  ├─ Attempt 1: 0ms                                                       │
-│  ├─ Attempt 2: 1000ms                                                    │
-│  └─ Attempt 3: 2000ms                                                    │
-│                                                                          │
-│  "exponential" - Exponenciálisan növekvő (ajánlott)                      │
-│  ├─ Attempt 1: 0ms                                                       │
-│  ├─ Attempt 2: 1000ms                                                    │
-│  └─ Attempt 3: 4000ms                                                    │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph backoff["Backoff Típusok"]
+        subgraph fixed["'fixed' - Fix időköz"]
+            F1["Attempt 1: 0ms"]
+            F2["Attempt 2: 1000ms"]
+            F3["Attempt 3: 1000ms"]
+        end
+        
+        subgraph linear["'linear' - Lineárisan növekvő"]
+            L1["Attempt 1: 0ms"]
+            L2["Attempt 2: 1000ms"]
+            L3["Attempt 3: 2000ms"]
+        end
+        
+        subgraph exponential["'exponential' - Exponenciális (ajánlott)"]
+            E1["Attempt 1: 0ms"]
+            E2["Attempt 2: 1000ms"]
+            E3["Attempt 3: 4000ms"]
+        end
+    end
+    
+    style exponential fill:#ccffcc,stroke:#00cc00
 ```
 
 ## Gyakorlati Példák

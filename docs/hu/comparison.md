@@ -18,35 +18,41 @@ A klasszikus Model-View-Controller (MVC) vagy Model-View-Presenter (MVP) archite
 
 #### Redundancia Probléma
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    MVC/MVP Architektúra - Redundancia                    │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                         ADATBÁZIS RÉTEG                             │ │
-│  │  • users.sql - CREATE TABLE users (name VARCHAR, email VARCHAR...)  │ │
-│  │  • Migrációk kezelése                                               │ │
-│  │  • Indexek, constraintek                                            │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                               ↓ Duplikálás                               │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                          BACKEND RÉTEG                              │ │
-│  │  • User.model.ts - interface User { name: string, email: string }   │ │
-│  │  • UserDTO.ts - class UserDTO { @IsString() name, @IsEmail() email }│ │
-│  │  • user.validation.ts - Joi/Yup séma                                │ │
-│  │  • user.controller.ts - CRUD endpoints                              │ │
-│  │  • user.service.ts - Business logic                                 │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                               ↓ Duplikálás                               │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                         FRONTEND RÉTEG                              │ │
-│  │  • user.types.ts - interface User (újra!)                           │ │
-│  │  • UserForm.tsx - <input name="name"/> <input name="email"/>        │ │
-│  │  • user.validation.ts - Frontend validáció (újra!)                  │ │
-│  │  • user.api.ts - API hívások                                        │ │
-│  │  • user.store.ts - State management                                 │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph mvc["MVC/MVP Architektúra - Redundancia"]
+        subgraph db["ADATBÁZIS RÉTEG"]
+            DB1["users.sql - CREATE TABLE"]
+            DB2["Migrációk kezelése"]
+            DB3["Indexek, constraintek"]
+        end
+        
+        DUP1["↓ Duplikálás"]
+        
+        subgraph backend["BACKEND RÉTEG"]
+            BE1["User.model.ts - interface"]
+            BE2["UserDTO.ts - validáció"]
+            BE3["user.validation.ts - Joi/Yup"]
+            BE4["user.controller.ts - CRUD"]
+            BE5["user.service.ts - Logic"]
+        end
+        
+        DUP2["↓ Duplikálás"]
+        
+        subgraph frontend["FRONTEND RÉTEG"]
+            FE1["user.types.ts - interface (újra!)"]
+            FE2["UserForm.tsx - komponens"]
+            FE3["user.validation.ts (újra!)"]
+            FE4["user.api.ts - API hívások"]
+            FE5["user.store.ts - State"]
+        end
+        
+        db --> DUP1 --> backend --> DUP2 --> frontend
+    end
+    
+    style mvc fill:#ffeeee,stroke:#cc0000
+    style DUP1 fill:#ffcccc,stroke:#cc0000
+    style DUP2 fill:#ffcccc,stroke:#cc0000
 ```
 
 #### Konkrét Számok
@@ -69,36 +75,18 @@ Egy egyszerű "User" entitás hagyományos MVC-ben:
 
 ### FormFiller Megoldás
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    FormFiller Architektúra - Zero Redundancia            │
-│                                                                          │
-│                    ┌─────────────────────────────────┐                   │
-│                    │      FormFiller Schema          │                   │
-│                    │     (egyetlen JSON fájl)        │                   │
-│                    │                                 │                   │
-│                    │  {                              │                   │
-│                    │    "name": "userForm",          │                   │
-│                    │    "items": [                   │                   │
-│                    │      { "name": "name",          │                   │
-│                    │        "type": "text",          │                   │
-│                    │        "validationRules": [...] │                   │
-│                    │      },                         │                   │
-│                    │      { "name": "email",         │                   │
-│                    │        "type": "text",          │                   │
-│                    │        "validationRules": [...] │                   │
-│                    │      }                          │                   │
-│                    │    ]                            │                   │
-│                    │  }                              │                   │
-│                    └──────────────┬──────────────────┘                   │
-│                                   │                                      │
-│              ┌────────────────────┼────────────────────┐                 │
-│              ↓                    ↓                    ↓                 │
-│       ┌────────────┐       ┌────────────┐       ┌────────────┐          │
-│       │  MongoDB   │       │  Backend   │       │  Frontend  │          │
-│       │ (auto-save)│       │ (auto-API) │       │ (auto-UI)  │          │
-│       └────────────┘       └────────────┘       └────────────┘          │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph ff["FormFiller Architektúra - Zero Redundancia"]
+        SCHEMA["FormFiller Schema<br/>(egyetlen JSON fájl)<br/><br/>name, items, validationRules..."]
+        
+        SCHEMA --> DB["MongoDB<br/>(auto-save)"]
+        SCHEMA --> BE["Backend<br/>(auto-API)"]
+        SCHEMA --> FE["Frontend<br/>(auto-UI)"]
+    end
+    
+    style ff fill:#eeffee,stroke:#00cc00
+    style SCHEMA fill:#ccffcc,stroke:#00cc00
 ```
 
 #### Ugyanaz a "User" űrlap FormFiller-ben:
@@ -239,52 +227,47 @@ Egy egyszerű "User" entitás hagyományos MVC-ben:
 
 ### FormFiller Egyedi Előnyei
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    FormFiller vs SaaS Form Builders                      │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 1. TELJES KONTROLL                                                  │ │
-│  │    • Saját szerveren fut (on-premise, cloud, hybrid)                │ │
-│  │    • Adatok nem hagyják el a szervezetet                            │ │
-│  │    • Nincs vendor lock-in                                           │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 2. KORLÁTLAN TESTRESZABÁS                                           │ │
-│  │    • Forráskód módosítható                                          │ │
-│  │    • Egyedi komponensek fejleszthetők                               │ │
-│  │    • Bármilyen integráció megvalósítható                            │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 3. FEJLETT VALIDÁCIÓ                                                │ │
-│  │    • Group validátorok (mező és űrlap szintű)                       │ │
-│  │    • ComputedRules (pl. vizsga pontozás)                            │ │
-│  │    • Cross-field validáció teljes path támogatással                 │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 4. WORKFLOW ENGINE                                                  │ │
-│  │    • Többlépéses folyamatok (validate → save → notify → api)        │ │
-│  │    • Hibakezelési stratégiák (stop, continue, rollback)             │ │
-│  │    • Feltételes végrehajtás                                         │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 5. AI INTEGRÁCIÓ                                                    │ │
-│  │    • Űrlap generálás természetes nyelvből                           │ │
-│  │    • Schema alapú, validálható kimenet                              │ │
-│  │    • Nincs extra költség (saját LLM használható)                    │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ 6. MULTISITE KÉPESSÉG                                               │ │
-│  │    • Több bérlő egy telepítésen                                     │ │
-│  │    • Izolált adatbázisok opcionálisan                               │ │
-│  │    • Központi menedzsment                                           │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph advantages["FormFiller vs SaaS Form Builders"]
+        subgraph ctrl["1. TELJES KONTROLL"]
+            C1["Saját szerveren fut"]
+            C2["Adatok nem hagyják el a szervezetet"]
+            C3["Nincs vendor lock-in"]
+        end
+        
+        subgraph custom["2. KORLÁTLAN TESTRESZABÁS"]
+            CU1["Forráskód módosítható"]
+            CU2["Egyedi komponensek fejleszthetők"]
+            CU3["Bármilyen integráció"]
+        end
+        
+        subgraph valid["3. FEJLETT VALIDÁCIÓ"]
+            V1["Group validátorok"]
+            V2["ComputedRules"]
+            V3["Cross-field validáció"]
+        end
+        
+        subgraph wf["4. WORKFLOW ENGINE"]
+            W1["Többlépéses folyamatok"]
+            W2["Hibakezelési stratégiák"]
+            W3["Feltételes végrehajtás"]
+        end
+        
+        subgraph ai["5. AI INTEGRÁCIÓ"]
+            A1["Természetes nyelv → űrlap"]
+            A2["Schema alapú kimenet"]
+            A3["Saját LLM használható"]
+        end
+        
+        subgraph multi["6. MULTISITE KÉPESSÉG"]
+            M1["Több bérlő"]
+            M2["Izolált adatbázisok"]
+            M3["Központi menedzsment"]
+        end
+    end
+    
+    style advantages fill:#eeffee,stroke:#00cc00
 ```
 
 ### Mikor Válaszd a FormFiller-t?
@@ -347,22 +330,28 @@ Egy egyszerű "User" entitás hagyományos MVC-ben:
 
 ### Végső Ajánlás
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Mikor válaszd a FormFiller-t?                    │
-│                                                                          │
-│  ✅ Ha saját szerveren kell futtatni (compliance, GDPR)                 │
-│  ✅ Ha komplex validáció és workflow kell                               │
-│  ✅ Ha API-first megközelítésre van szükség                             │
-│  ✅ Ha egyedi komponenseket vagy integrációkat kell fejleszteni         │
-│  ✅ Ha multisite/multi-tenant architektúra szükséges                    │
-│  ✅ Ha AI-alapú űrlap generálást szeretnél                              │
-│  ✅ Ha hosszú távú, karbantartható megoldást keresel                    │
-│                                                                          │
-│  ❌ Ha csak gyors, egyszeri felmérés kell                               │
-│  ❌ Ha nincs technikai erőforrás a telepítéshez                         │
-│  ❌ Ha a vizuális drag & drop szerkesztő kritikus (egyelőre tervezett)  │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph decision["Mikor válaszd a FormFiller-t?"]
+        subgraph yes["✅ Igen"]
+            Y1["Saját szerveren kell futtatni"]
+            Y2["Komplex validáció és workflow"]
+            Y3["API-first megközelítés"]
+            Y4["Egyedi komponensek/integrációk"]
+            Y5["Multisite architektúra"]
+            Y6["AI-alapú generálás"]
+            Y7["Hosszú távú karbantarthatóság"]
+        end
+        
+        subgraph no["❌ Nem"]
+            N1["Csak gyors, egyszeri felmérés"]
+            N2["Nincs technikai erőforrás"]
+            N3["Drag & drop kritikus"]
+        end
+    end
+    
+    style yes fill:#eeffee,stroke:#00cc00
+    style no fill:#ffeeee,stroke:#cc0000
 ```
 
 ---

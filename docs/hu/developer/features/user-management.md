@@ -8,24 +8,12 @@ A FormFiller beépített felhasználó kezelési funkciókat biztosít: regisztr
 
 Az alapértelmezett autentikációs mód JWT (JSON Web Token) használatával:
 
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Login     │────▶│   Backend   │────▶│ JWT Token   │
-│   Form      │     │  /auth/login│     │  generálás  │
-└─────────────┘     └─────────────┘     └──────┬──────┘
-                                               │
-                    ┌──────────────────────────┘
-                    ▼
-              ┌─────────────┐
-              │ localStorage│  Token tárolás
-              │   token     │
-              └──────┬──────┘
-                     │
-                     ▼
-              ┌─────────────┐
-              │  Minden API │  Authorization: Bearer <token>
-              │   hívás     │
-              └─────────────┘
+```mermaid
+flowchart TB
+    LOGIN["Login Form"] --> BE["Backend<br/>/auth/login"]
+    BE --> JWT["JWT Token<br/>generálás"]
+    JWT --> STORE["localStorage<br/>token tárolás"]
+    STORE --> API["Minden API hívás<br/>Authorization: Bearer token"]
 ```
 
 ### Google OAuth

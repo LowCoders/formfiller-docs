@@ -16,38 +16,35 @@ A FormFiller nyílt architektúrája számos kreatív továbbfejlesztési lehet�
 
 ## AI és Gépi Tanulás
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        AI Fejlesztési Irányok                            │
-│                                                                          │
-│  ┌────────────────────────────────────────────────────────────────────┐  │
-│  │ 1. INTELLIGENS ŰRLAP GENERÁLÁS                                     │  │
-│  │    • Természetes nyelvi leírásból teljes űrlap                     │  │
-│  │    • Meglévő dokumentumok (PDF, Word) konvertálása                 │  │
-│  │    • Adatbázis sémából automatikus űrlap                           │  │
-│  └────────────────────────────────────────────────────────────────────┘  │
-│                                                                          │
-│  ┌────────────────────────────────────────────────────────────────────┐  │
-│  │ 2. VÁLASZ ELŐREJELZÉS                                              │  │
-│  │    • Automatikus kitöltési javaslatok korábbi válaszok alapján     │  │
-│  │    • Hibás adatbevitel felismerése                                 │  │
-│  │    • Intelligens alapértelmezések                                  │  │
-│  └────────────────────────────────────────────────────────────────────┘  │
-│                                                                          │
-│  ┌────────────────────────────────────────────────────────────────────┐  │
-│  │ 3. DOKUMENTUM FELDOLGOZÁS                                          │  │
-│  │    • OCR integráció űrlap kitöltéshez                              │  │
-│  │    • Képből űrlapmező értékek kinyerése                            │  │
-│  │    • Hangalapú űrlap kitöltés                                      │  │
-│  └────────────────────────────────────────────────────────────────────┘  │
-│                                                                          │
-│  ┌────────────────────────────────────────────────────────────────────┐  │
-│  │ 4. ANALITIKA ÉS INSIGHTS                                           │  │
-│  │    • Válaszok sentiment elemzése                                   │  │
-│  │    • Automatikus összefoglalók és riportok                         │  │
-│  │    • Anomália detektálás                                           │  │
-│  └────────────────────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph ai["AI Fejlesztési Irányok"]
+        subgraph gen["1. INTELLIGENS ŰRLAP GENERÁLÁS"]
+            G1["Természetes nyelvi leírásból teljes űrlap"]
+            G2["PDF, Word dokumentumok konvertálása"]
+            G3["Adatbázis sémából automatikus űrlap"]
+        end
+        
+        subgraph pred["2. VÁLASZ ELŐREJELZÉS"]
+            P1["Automatikus kitöltési javaslatok"]
+            P2["Hibás adatbevitel felismerése"]
+            P3["Intelligens alapértelmezések"]
+        end
+        
+        subgraph doc["3. DOKUMENTUM FELDOLGOZÁS"]
+            D1["OCR integráció"]
+            D2["Képből mező értékek kinyerése"]
+            D3["Hangalapú űrlap kitöltés"]
+        end
+        
+        subgraph anal["4. ANALITIKA ÉS INSIGHTS"]
+            A1["Sentiment elemzés"]
+            A2["Automatikus összefoglalók"]
+            A3["Anomália detektálás"]
+        end
+    end
+    
+    style ai fill:#e6f3ff,stroke:#0066cc
 ```
 
 ### AI Funkcionalitás Részletezése
@@ -77,60 +74,71 @@ A FormFiller nyílt architektúrája számos kreatív továbbfejlesztési lehet�
 
 ### Vizuális Szerkesztő Koncepció
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                      Drag & Drop Builder UI                              │
-│                                                                          │
-│  ┌──────────────┐  ┌────────────────────────────┐  ┌──────────────────┐ │
-│  │  Komponensek │  │       Szerkesztő Felület   │  │  Tulajdonságok   │ │
-│  │              │  │                            │  │                  │ │
-│  │  □ Szöveg    │  │  ┌────────────────────┐   │  │  Név: email      │ │
-│  │  □ Szám      │  │  │ Email cím          │   │  │  Típus: text     │ │
-│  │  □ Dátum     │  │  │ ┌────────────────┐ │   │  │  Kötelező: ✓     │ │
-│  │  □ Legördülő │  │  │ │                │ │   │  │  Validáció:      │ │
-│  │  □ Checkbox  │  │  │ └────────────────┘ │   │  │   - email        │ │
-│  │  □ Fájl      │  │  └────────────────────┘   │  │   - required     │ │
-│  │  □ Aláírás   │  │                            │  │                  │ │
-│  │              │  │  ┌────────────────────┐   │  │  Események:      │ │
-│  │  ─────────── │  │  │ Jelszó            │   │  │   onChange: ...  │ │
-│  │  □ Csoport   │  │  │ ┌────────────────┐ │   │  │                  │ │
-│  │  □ Rács      │  │  │ │ ••••••••       │ │   │  │  Stílus:         │ │
-│  │  □ Tab       │  │  │ └────────────────┘ │   │  │   width: 100%    │ │
-│  │              │  │  └────────────────────┘   │  │                  │ │
-│  └──────────────┘  └────────────────────────────┘  └──────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │  [Előnézet]  [JSON]  [Mentés]  [Publikálás]                        │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph builder["Drag & Drop Builder UI"]
+        subgraph components["Komponensek"]
+            C1["□ Szöveg"]
+            C2["□ Szám"]
+            C3["□ Dátum"]
+            C4["□ Legördülő"]
+            C5["□ Checkbox"]
+            C6["□ Csoport"]
+            C7["□ Rács"]
+        end
+        
+        subgraph editor["Szerkesztő Felület"]
+            E1["Email cím mező"]
+            E2["Jelszó mező"]
+        end
+        
+        subgraph props["Tulajdonságok"]
+            P1["Név: email"]
+            P2["Típus: text"]
+            P3["Kötelező: ✓"]
+            P4["Validáció: email, required"]
+        end
+        
+        components --> editor
+        editor --> props
+    end
+    
+    subgraph toolbar["Eszköztár"]
+        T1["Előnézet"]
+        T2["JSON"]
+        T3["Mentés"]
+        T4["Publikálás"]
+    end
 ```
 
 ---
 
 ## Kollaboráció
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                     Kollaborációs Funkciók                               │
-│                                                                          │
-│  REAL-TIME EGYÜTTMŰKÖDÉS                                                 │
-│  ├── Többfelhasználós űrlap szerkesztés                                 │
-│  ├── Változások élő szinkronizálása                                     │
-│  ├── Kurzor és kijelölés megjelenítése                                  │
-│  └── Konfliktuskezelés (OT/CRDT)                                        │
-│                                                                          │
-│  KOMMENTELÉS ÉS REVIEW                                                   │
-│  ├── Mezőszintű kommentek                                               │
-│  ├── Review workflow (draft → review → approved)                        │
-│  ├── Változások összehasonlítása (diff)                                 │
-│  └── Jóváhagyási folyamat                                               │
-│                                                                          │
-│  VERZIÓKEZELÉS                                                           │
-│  ├── Git-szerű verziókövetés                                            │
-│  ├── Branching és merging                                               │
-│  ├── Visszaállítás korábbi verzióra                                     │
-│  └── Változástörténet és audit log                                      │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph collab["Kollaborációs Funkciók"]
+        subgraph realtime["REAL-TIME EGYÜTTMŰKÖDÉS"]
+            R1["Többfelhasználós szerkesztés"]
+            R2["Élő szinkronizálás"]
+            R3["Kurzor megjelenítés"]
+            R4["Konfliktuskezelés (OT/CRDT)"]
+        end
+        
+        subgraph review["KOMMENTELÉS ÉS REVIEW"]
+            RE1["Mezőszintű kommentek"]
+            RE2["Review workflow"]
+            RE3["Változások diff"]
+            RE4["Jóváhagyási folyamat"]
+        end
+        
+        subgraph version["VERZIÓKEZELÉS"]
+            V1["Git-szerű verziókövetés"]
+            V2["Branching és merging"]
+            V3["Visszaállítás"]
+            V4["Audit log"]
+        end
+    end
 ```
 
 ### Kollaboráció Részletezése
@@ -197,25 +205,24 @@ interface FormFillerPlugin {
 
 ### Offline Támogatás
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        Offline Működés                                   │
-│                                                                          │
-│  ┌────────────────┐                        ┌────────────────┐           │
-│  │   ONLINE MÓD   │                        │  OFFLINE MÓD   │           │
-│  │                │                        │                │           │
-│  │  Űrlap betölt  │──── Szinkronizálás ───→│ LocalStorage/  │           │
-│  │  Adatok ment   │←───────────────────────│ IndexedDB      │           │
-│  │                │                        │                │           │
-│  └────────────────┘                        └────────────────┘           │
-│                                                   │                     │
-│                                                   ▼                     │
-│                                            ┌────────────────┐           │
-│                                            │ Konfliktus-    │           │
-│                                            │ kezelés        │           │
-│                                            │ (merge/replace)│           │
-│                                            └────────────────┘           │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph offline_flow["Offline Működés"]
+        subgraph online["ONLINE MÓD"]
+            O1["Űrlap betölt"]
+            O2["Adatok ment"]
+        end
+        
+        subgraph offline["OFFLINE MÓD"]
+            OF1["LocalStorage"]
+            OF2["IndexedDB"]
+        end
+        
+        CONFLICT["Konfliktuskezelés<br/>(merge/replace)"]
+        
+        online <-->|"Szinkronizálás"| offline
+        offline --> CONFLICT
+    end
 ```
 
 ---
@@ -293,38 +300,31 @@ interface FormFillerPlugin {
 
 ## Analitika és Riportálás
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                      Analitika Dashboard                                 │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                     BEÉPÍTETT METRIKÁK                              │ │
-│  │                                                                      │ │
-│  │  • Kitöltési arány (completion rate)                                │ │
-│  │  • Átlagos kitöltési idő                                            │ │
-│  │  • Mezőszintű hibaarány                                             │ │
-│  │  • Elhagyási pont (drop-off point)                                  │ │
-│  │  • Konverziós tölcsér                                               │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                     VIZUALIZÁCIÓK                                   │ │
-│  │                                                                      │ │
-│  │  • Interaktív grafikonok (chart.js, D3)                             │ │
-│  │  • Heatmap (mezőinterakciók)                                        │ │
-│  │  • Geografikus megoszlás                                            │ │
-│  │  • Időbeli trendek                                                  │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                     EXPORT ÉS RIPORTOK                              │ │
-│  │                                                                      │ │
-│  │  • Automatikus riport küldés (napi/heti/havi)                       │ │
-│  │  • PDF riport generálás                                             │ │
-│  │  • Custom dashboard builder                                         │ │
-│  │  • BI tool integráció (Tableau, Power BI)                           │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph analytics["Analitika Dashboard"]
+        subgraph metrics["BEÉPÍTETT METRIKÁK"]
+            M1["Kitöltési arány"]
+            M2["Átlagos kitöltési idő"]
+            M3["Mezőszintű hibaarány"]
+            M4["Elhagyási pont"]
+            M5["Konverziós tölcsér"]
+        end
+        
+        subgraph viz["VIZUALIZÁCIÓK"]
+            V1["Interaktív grafikonok"]
+            V2["Heatmap"]
+            V3["Geografikus megoszlás"]
+            V4["Időbeli trendek"]
+        end
+        
+        subgraph export["EXPORT ÉS RIPORTOK"]
+            E1["Automatikus riport küldés"]
+            E2["PDF generálás"]
+            E3["Dashboard builder"]
+            E4["BI integráció"]
+        end
+    end
 ```
 
 ### Dashboard Widgetek
@@ -356,40 +356,40 @@ interface FormFillerPlugin {
 
 ### Részletes Roadmap
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Fejlesztési Roadmap                              │
-│                                                                          │
-│  2024 Q1-Q2: VIZUÁLIS SZERKESZTŐ                                        │
-│  ├── Drag & Drop Builder MVP                                            │
-│  ├── Live Preview                                                       │
-│  ├── Template Gallery (20+ sablon)                                      │
-│  └── Téma szerkesztő                                                    │
-│                                                                          │
-│  2024 Q3-Q4: KOLLABORÁCIÓ                                               │
-│  ├── Verziókezelés                                                      │
-│  ├── Kommentek és review                                                │
-│  ├── Real-time együttműködés (Beta)                                     │
-│  └── Activity feed                                                      │
-│                                                                          │
-│  2025 Q1-Q2: INTEGRÁCIÓK                                                │
-│  ├── Plugin SDK                                                         │
-│  ├── 10+ hivatalos plugin                                               │
-│  ├── Webhook builder UI                                                 │
-│  └── No-code automatizációk                                             │
-│                                                                          │
-│  2025 Q3-Q4: AI FUNKCIÓK                                                │
-│  ├── Prompt → Űrlap generálás                                           │
-│  ├── Smart autocomplete                                                 │
-│  ├── PDF/dokumentum konvertálás                                         │
-│  └── Analitika insights                                                 │
-│                                                                          │
-│  2026+: PLATFORM                                                         │
-│  ├── iOS/Android app                                                    │
-│  ├── Offline támogatás                                                  │
-│  ├── Plugin marketplace                                                 │
-│  └── Enterprise features                                                │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+gantt
+    title Fejlesztési Roadmap
+    dateFormat  YYYY-MM
+    
+    section Vizuális Szerkesztő
+    Drag & Drop Builder MVP     :2024-01, 3M
+    Live Preview                :2024-02, 2M
+    Template Gallery            :2024-03, 3M
+    Téma szerkesztő             :2024-05, 2M
+    
+    section Kollaboráció
+    Verziókezelés               :2024-07, 2M
+    Kommentek és review         :2024-08, 2M
+    Real-time együttműködés     :2024-09, 3M
+    Activity feed               :2024-11, 2M
+    
+    section Integrációk
+    Plugin SDK                  :2025-01, 3M
+    Hivatalos pluginek          :2025-03, 3M
+    Webhook builder UI          :2025-04, 2M
+    No-code automatizációk      :2025-05, 2M
+    
+    section AI Funkciók
+    Prompt → Űrlap generálás    :2025-07, 3M
+    Smart autocomplete          :2025-09, 2M
+    PDF konvertálás             :2025-10, 2M
+    Analitika insights          :2025-11, 2M
+    
+    section Platform
+    iOS/Android app             :2026-01, 6M
+    Offline támogatás           :2026-04, 3M
+    Plugin marketplace          :2026-06, 4M
+    Enterprise features         :2026-08, 6M
 ```
 
 ### Közösségi Hozzájárulás
