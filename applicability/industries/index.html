@@ -1,0 +1,4581 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Modern low-code framework documentation with form management focus">
+      
+      
+        <meta name="author" content="FormFiller Team">
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="healthcare/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../hu/applicability/industries/" hreflang="hu">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Overview - FormFiller Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#industry-applicability" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FormFiller Documentation" class="md-header__button md-logo" aria-label="FormFiller Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FormFiller Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../hu/applicability/industries/" hreflang="hu" class="md-select__link">
+              Magyar
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LowCoders/formfiller-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    formfiller-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../architecture/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../comparison/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Comparison
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer/" class="md-tabs__link">
+          
+  
+  
+  Developer Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user/" class="md-tabs__link">
+          
+  
+  
+  User Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Applicability
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FormFiller Documentation" class="md-nav__button md-logo" aria-label="FormFiller Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FormFiller Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LowCoders/formfiller-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    formfiller-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/event-handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/form-components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Form Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_9" id="__nav_5_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/ai-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/data-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/multisite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multisite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/rbac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RBAC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/theming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/user-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/features/workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/form-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Form Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/admin-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/traditional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traditional (VPS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applicability
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Applicability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Industries
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Industries
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation Methodology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star Rating
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-and-ai-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component and AI Capabilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component and AI Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-by-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Components by Industry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-potential-by-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Potential by Industry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-industries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Industries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Industries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#healthcare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Healthcare
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#financeinsurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finance/Insurance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Sector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#education" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Education
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hrrecruiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HR/Recruiting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecommunications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telecommunications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grant-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grant Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-industries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Industries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Industries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manufacturing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retaile-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retail/E-commerce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-estate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real Estate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-profit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-profit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legal-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Sector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energyutilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Energy/Utilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agriculture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tourismhospitality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tourism/Hospitality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sportsevents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sports/Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary Observations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In Numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historical-parallel-the-sql-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical Parallel: The SQL Moment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Historical Parallel: The SQL Moment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem-then-and-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem Then and Now
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-formfiller-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The FormFiller Parallel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-did-sql-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Did SQL Work?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ai-dimension-what-sql-couldnt-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The AI Dimension: What SQL Couldn't Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeating-the-database-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeating the "Database Moment"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="healthcare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="finance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Education
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="public-sector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Public Sector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="telco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telco
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="grants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Functions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/approval-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Approval Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/configurator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/survey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Survey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/ticketing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ticketing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creative-uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creative Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation Methodology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star Rating
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-and-ai-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component and AI Capabilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component and AI Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-by-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Components by Industry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-potential-by-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Potential by Industry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-industries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Industries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Industries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#healthcare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Healthcare
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#financeinsurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finance/Insurance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Sector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#education" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Education
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hrrecruiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HR/Recruiting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecommunications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telecommunications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grant-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grant Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-industries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Industries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Industries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manufacturing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retaile-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retail/E-commerce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-estate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real Estate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-profit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-profit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legal-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Sector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energyutilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Energy/Utilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agriculture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tourismhospitality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tourism/Hospitality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sportsevents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sports/Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary Observations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In Numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historical-parallel-the-sql-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical Parallel: The SQL Moment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Historical Parallel: The SQL Moment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem-then-and-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem Then and Now
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-formfiller-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The FormFiller Parallel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-did-sql-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Did SQL Work?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ai-dimension-what-sql-couldnt-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The AI Dimension: What SQL Couldn't Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeating-the-database-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeating the "Database Moment"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<p><a href="../">← Back to Applicability Main Page</a></p>
+<h1 id="industry-applicability">Industry Applicability<a class="headerlink" href="#industry-applicability" title="Permanent link">&para;</a></h1>
+<p>This page summarizes the applicability of the FormFiller system across 18 different industries, with detailed analysis for key areas.</p>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#evaluation-methodology">Evaluation Methodology</a></li>
+<li><a href="#component-and-ai-capabilities">Component and AI Capabilities</a></li>
+<li><a href="#key-industries">Key Industries (with detailed analysis)</a></li>
+<li><a href="#additional-industries">Additional Industries</a></li>
+<li><a href="#summary-table">Summary Table</a></li>
+<li><a href="#analysis-findings">Analysis Findings</a></li>
+<li><a href="#historical-parallel-the-sql-moment">Historical Parallel: The SQL Moment</a></li>
+</ol>
+<hr />
+<h2 id="evaluation-methodology">Evaluation Methodology<a class="headerlink" href="#evaluation-methodology" title="Permanent link">&para;</a></h2>
+<h3 id="evaluation-criteria">Evaluation Criteria<a class="headerlink" href="#evaluation-criteria" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fit</strong></td>
+<td>How suitable FormFiller is in its current state for industry needs</td>
+</tr>
+<tr>
+<td><strong>Potential</strong></td>
+<td>What development opportunities exist in the platform</td>
+</tr>
+<tr>
+<td><strong>Market Size (TAM)</strong></td>
+<td>Estimated global market value (Total Addressable Market)</td>
+</tr>
+<tr>
+<td><strong>Savings</strong></td>
+<td>Expected cost reduction compared to traditional solutions</td>
+</tr>
+<tr>
+<td><strong>Success</strong></td>
+<td>Probability of market success in the given industry</td>
+</tr>
+</tbody>
+</table>
+<h3 id="star-rating">Star Rating<a class="headerlink" href="#star-rating" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Stars</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★★★★★</td>
+<td>Excellent - Immediately applicable</td>
+</tr>
+<tr>
+<td>★★★★☆</td>
+<td>Very good - With minor customization</td>
+</tr>
+<tr>
+<td>★★★☆☆</td>
+<td>Good - With moderate development</td>
+</tr>
+<tr>
+<td>★★☆☆☆</td>
+<td>Moderate - Significant development needed</td>
+</tr>
+<tr>
+<td>★☆☆☆☆</td>
+<td>Low - Basic features missing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="component-and-ai-capabilities">Component and AI Capabilities<a class="headerlink" href="#component-and-ai-capabilities" title="Permanent link">&para;</a></h2>
+<p>FormFiller provides 80+ professional UI components for every industry. The unified JSON schema architecture enables particularly effective AI integration.</p>
+<h3 id="components-by-industry">Components by Industry<a class="headerlink" href="#components-by-industry" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Industry</th>
+<th>Key Components</th>
+<th>Main Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Healthcare</strong></td>
+<td>Scheduler, Charts, Gantt, Form</td>
+<td>Appointments, vital monitoring, treatment plans</td>
+</tr>
+<tr>
+<td><strong>Finance</strong></td>
+<td>Charts, PivotGrid, Diagram, DataGrid</td>
+<td>Dashboard, reports, workflow, transactions</td>
+</tr>
+<tr>
+<td><strong>Public Sector</strong></td>
+<td>Gantt, Diagram, TreeView, FileManager</td>
+<td>Projects, processes, organization, documents</td>
+</tr>
+<tr>
+<td><strong>Education</strong></td>
+<td>Scheduler, Charts, DataGrid, HtmlEditor</td>
+<td>Schedule, grades, students, assignments</td>
+</tr>
+<tr>
+<td><strong>HR</strong></td>
+<td>Scheduler, Gantt, Charts, DataGrid</td>
+<td>Interviews, onboarding, performance, employees</td>
+</tr>
+<tr>
+<td><strong>Telco</strong></td>
+<td>Charts, TreeList, Diagram, DataGrid</td>
+<td>Analytics, services, network, customers</td>
+</tr>
+<tr>
+<td><strong>Grants</strong></td>
+<td>Gantt, Charts, PivotGrid, TreeView</td>
+<td>Scheduling, budget, monitoring, structure</td>
+</tr>
+<tr>
+<td><strong>Manufacturing</strong></td>
+<td>DataGrid, Charts, Gauges, Scheduler</td>
+<td>Production data, KPI, status, maintenance</td>
+</tr>
+<tr>
+<td><strong>Real Estate</strong></td>
+<td>Gallery, DataGrid, Charts, Scheduler</td>
+<td>Portfolio, tenants, analytics, appointments</td>
+</tr>
+<tr>
+<td><strong>Construction</strong></td>
+<td>Gantt, Charts, DataGrid, FileManager</td>
+<td>Project scheduling, costs, reports, documents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-potential-by-industry">AI Potential by Industry<a class="headerlink" href="#ai-potential-by-industry" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Industry</th>
+<th>AI Function</th>
+<th>Expected Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Healthcare</strong></td>
+<td>Medical document OCR, intelligent anamnesis, predictive filling</td>
+<td>40-60% administration reduction</td>
+</tr>
+<tr>
+<td><strong>Finance</strong></td>
+<td>KYC auto-validation, anomaly detection, document processing</td>
+<td>50-70% manual verification savings</td>
+</tr>
+<tr>
+<td><strong>Public Sector</strong></td>
+<td>Request classification, automatic routing, NL query</td>
+<td>60-80% case handling time reduction</td>
+</tr>
+<tr>
+<td><strong>Education</strong></td>
+<td>Automatic grading, plagiarism checking, adaptive questions</td>
+<td>70-90% grading time savings</td>
+</tr>
+<tr>
+<td><strong>HR</strong></td>
+<td>Resume analysis, interview scheduling, onboarding automation</td>
+<td>50-70% HR administration reduction</td>
+</tr>
+<tr>
+<td><strong>Telco</strong></td>
+<td>Predictive troubleshooting, chatbot support, churn prediction</td>
+<td>30-50% customer service cost reduction</td>
+</tr>
+<tr>
+<td><strong>Grants</strong></td>
+<td>Application pre-evaluation, budget validation, automatic summaries</td>
+<td>60-80% evaluation time savings</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    subgraph schema["Unified JSON Schema"]
+        S["Structure + Validation + UI"]
+    end
+
+    subgraph ai["AI Engine"]
+        GEN["Generation"]
+        VAL["Validation"]
+        AUTO["Auto-fill"]
+        ANAL["Analysis"]
+    end
+
+    subgraph dx["Components"]
+        FORM["Forms"]
+        VIZ["Visualization"]
+        SCHED["Scheduling"]
+    end
+
+    S --&gt; ai
+    S --&gt; dx
+    ai --&gt; |"generated"| dx</code></pre>
+<hr />
+<h2 id="key-industries">Key Industries<a class="headerlink" href="#key-industries" title="Permanent link">&para;</a></h2>
+<p>Detailed analysis has been prepared for the following industries on separate pages.</p>
+<h3 id="healthcare">Healthcare<a class="headerlink" href="#healthcare" title="Permanent link">&para;</a></h3>
+<p><strong><a href="healthcare/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$50-100B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- Patient intake forms, anamnesis
+- Clinical research data collection (eCRF)
+- Patient satisfaction surveys
+- Medical reports, documentation</p>
+<p><strong>Traditional solutions:</strong> Epic, Cerner, Meditech, Veeva</p>
+<hr />
+<h3 id="financeinsurance">Finance/Insurance<a class="headerlink" href="#financeinsurance" title="Permanent link">&para;</a></h3>
+<p><strong><a href="finance/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$80-150B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- KYC (Know Your Customer) forms
+- Loan application, account opening
+- Claims filing and processing
+- Compliance and audit checklists</p>
+<p><strong>Traditional solutions:</strong> Salesforce FSC, Guidewire, Duck Creek</p>
+<hr />
+<h3 id="public-sector">Public Sector<a class="headerlink" href="#public-sector" title="Permanent link">&para;</a></h3>
+<p><strong><a href="public-sector/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$30-60B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>70-90%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- E-government, citizen applications
+- Permit processes
+- Tax filing, subsidy applications
+- Internal administration</p>
+<p><strong>Traditional solutions:</strong> SAP Public Sector, Oracle, custom development</p>
+<hr />
+<h3 id="education">Education<a class="headerlink" href="#education" title="Permanent link">&para;</a></h3>
+<p><strong><a href="education/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$10-25B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>80-95%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- Enrollment, applications
+- Exams, papers, quizzes
+- Assignment, project evaluation
+- Course evaluation, feedback</p>
+<p><strong>Traditional solutions:</strong> Canvas, Blackboard, Moodle, Google Classroom</p>
+<hr />
+<h3 id="hrrecruiting">HR/Recruiting<a class="headerlink" href="#hrrecruiting" title="Permanent link">&para;</a></h3>
+<p><strong><a href="hr/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$15-30B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>70-85%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- Job application, resume intake
+- Onboarding process
+- Performance evaluation
+- Leave request, remote work application</p>
+<p><strong>Traditional solutions:</strong> Workday, BambooHR, SAP SuccessFactors</p>
+<hr />
+<h3 id="telecommunications">Telecommunications<a class="headerlink" href="#telecommunications" title="Permanent link">&para;</a></h3>
+<p><strong><a href="telco/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$40-80B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- Service configuration, tariff selection
+- Customer portal, contract modification
+- Trouble ticket, technician work orders
+- SIM/eSIM activation</p>
+<p><strong>Traditional solutions:</strong> Amdocs, Comarch BSS, Netcracker</p>
+<hr />
+<h3 id="grant-systems">Grant Systems<a class="headerlink" href="#grant-systems" title="Permanent link">&para;</a></h3>
+<p><strong><a href="grants/">Detailed analysis →</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$5-15B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>80-95%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key areas:</strong>
+- Grant submission, multi-page forms
+- Evaluation process, scoring
+- Budget management
+- Monitoring, reports</p>
+<p><strong>Traditional solutions:</strong> Submittable, Fluxx, OpenGrants</p>
+<hr />
+<h2 id="additional-industries">Additional Industries<a class="headerlink" href="#additional-industries" title="Permanent link">&para;</a></h2>
+<p>Summary analysis has been prepared for the following industries.</p>
+<h3 id="manufacturing">Manufacturing<a class="headerlink" href="#manufacturing" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$40-70B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Quality control checklists
+- Equipment maintenance reports
+- Safety documentation
+- Supplier qualification</p>
+<p><strong>Traditional solutions:</strong> SAP Manufacturing, Oracle, Siemens</p>
+<p><strong>FormFiller advantages:</strong>
+- Offline support (planned)
+- Mobile-first forms
+- Easy integration with existing ERP</p>
+<p><strong>Required extensions:</strong>
+- Barcode/QR reader integration
+- Offline synchronization
+- ERP connectors (SAP, Oracle)</p>
+<hr />
+<h3 id="retaile-commerce">Retail/E-commerce<a class="headerlink" href="#retaile-commerce" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$25-50B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>40-60%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Customer registration, loyalty program
+- Product configuration (custom products)
+- Returns, complaints handling
+- Supplier forms</p>
+<p><strong>Traditional solutions:</strong> Shopify, Magento, WooCommerce</p>
+<p><strong>FormFiller advantages:</strong>
+- Custom product configuration
+- Complex returns workflow
+- B2B partner portal</p>
+<p><strong>Limitations:</strong>
+- Does not replace webshop features
+- Payment integration required</p>
+<hr />
+<h3 id="logistics">Logistics<a class="headerlink" href="#logistics" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$20-40B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Bill of lading, CMR documents
+- Loading checklists
+- Driver reports
+- Customs forms</p>
+<p><strong>Traditional solutions:</strong> SAP TM, Oracle TMS, Transporeon</p>
+<p><strong>FormFiller advantages:</strong>
+- Mobile forms for drivers
+- Digital signature capability
+- Real-time data collection</p>
+<hr />
+<h3 id="real-estate">Real Estate<a class="headerlink" href="#real-estate" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$10-20B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Lease agreement, needs assessment
+- Property condition assessment
+- Maintenance requests
+- Customer registration, inquiries</p>
+<p><strong>Traditional solutions:</strong> Yardi, AppFolio, Propertyware</p>
+<p><strong>FormFiller advantages:</strong>
+- Complex condition assessment forms
+- Photo attachment capability
+- Tenant portal</p>
+<hr />
+<h3 id="non-profit">Non-profit<a class="headerlink" href="#non-profit" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$5-10B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>80-95%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Donor registration
+- Volunteer application
+- Program enrollment
+- Impact measurement, reports</p>
+<p><strong>Traditional solutions:</strong> Blackbaud, Salesforce NPSP, Bloomerang</p>
+<p><strong>FormFiller advantages:</strong>
+- Free (open source) - cost-sensitive sector
+- Easy customization
+- GDPR compliance</p>
+<hr />
+<h3 id="legal-sector">Legal Sector<a class="headerlink" href="#legal-sector" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$10-20B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Client intake form
+- Case documentation
+- Checklists (due diligence)
+- Time tracking</p>
+<p><strong>Traditional solutions:</strong> Clio, PracticePanther, MyCase</p>
+<p><strong>FormFiller advantages:</strong>
+- Confidential data on own server
+- Complex conditional logic
+- Audit trail</p>
+<hr />
+<h3 id="construction">Construction<a class="headerlink" href="#construction" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$15-30B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Safety checklists
+- Daily reports, progress logs
+- Material orders
+- Subcontractor qualification</p>
+<p><strong>Traditional solutions:</strong> Procore, Buildertrend, PlanGrid</p>
+<p><strong>FormFiller advantages:</strong>
+- Mobile forms on-site
+- Photo documentation
+- Offline support (planned)</p>
+<hr />
+<h3 id="energyutilities">Energy/Utilities<a class="headerlink" href="#energyutilities" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$20-40B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>50-70%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Meter reading
+- Trouble tickets, field service
+- Contract signing, tariff changes
+- Regulatory reports</p>
+<p><strong>Traditional solutions:</strong> SAP Utilities, Oracle Utilities, Itron</p>
+<p><strong>FormFiller advantages:</strong>
+- Mobile field service forms
+- Customer self-service portal
+- Workflow automation</p>
+<hr />
+<h3 id="agriculture">Agriculture<a class="headerlink" href="#agriculture" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$8-15B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Farm logs
+- Crop protection reports
+- Subsidy applications
+- Quality assurance, traceability</p>
+<p><strong>Traditional solutions:</strong> Trimble, Climate Corp, Granular</p>
+<p><strong>FormFiller advantages:</strong>
+- Simple, customizable forms
+- EU subsidy formats
+- Offline operation (planned)</p>
+<hr />
+<h3 id="tourismhospitality">Tourism/Hospitality<a class="headerlink" href="#tourismhospitality" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$10-20B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Booking forms
+- Guest registration, check-in
+- Restaurant orders, menu configuration
+- Guest satisfaction surveys</p>
+<p><strong>Traditional solutions:</strong> Opera, Cloudbeds, Mews</p>
+<p><strong>FormFiller advantages:</strong>
+- Multi-language support
+- Mobile-friendly forms
+- Easy integration</p>
+<hr />
+<h3 id="sportsevents">Sports/Events<a class="headerlink" href="#sportsevents" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Potential</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Market Size</td>
+<td>$5-10B</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>70-85%</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application areas:</strong>
+- Event registration
+- Application forms (competition, camp)
+- Health declaration
+- Volunteer coordination</p>
+<p><strong>Traditional solutions:</strong> Eventbrite, Bizzabo, Cvent</p>
+<p><strong>FormFiller advantages:</strong>
+- Complex registration logic
+- Group applications
+- Payment integration capability</p>
+<hr />
+<h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Industry</th>
+<th style="text-align: center;">Fit</th>
+<th style="text-align: center;">Potential</th>
+<th style="text-align: right;">Market Size</th>
+<th style="text-align: center;">Savings</th>
+<th style="text-align: center;">Components</th>
+<th style="text-align: center;">AI Potential</th>
+<th style="text-align: center;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Healthcare</strong></td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: right;">$50-100B</td>
+<td style="text-align: center;">60-80%</td>
+<td style="text-align: center;">Scheduler, Charts</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="healthcare/">Link</a></td>
+</tr>
+<tr>
+<td><strong>Finance/Insurance</strong></td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: right;">$80-150B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">PivotGrid, Diagram</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="finance/">Link</a></td>
+</tr>
+<tr>
+<td><strong>Public Sector</strong></td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: right;">$30-60B</td>
+<td style="text-align: center;">70-90%</td>
+<td style="text-align: center;">Gantt, TreeView</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="public-sector/">Link</a></td>
+</tr>
+<tr>
+<td><strong>Education</strong></td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$10-25B</td>
+<td style="text-align: center;">80-95%</td>
+<td style="text-align: center;">Scheduler, Charts</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="education/">Link</a></td>
+</tr>
+<tr>
+<td><strong>HR/Recruiting</strong></td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$15-30B</td>
+<td style="text-align: center;">70-85%</td>
+<td style="text-align: center;">Gantt, Scheduler</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="hr/">Link</a></td>
+</tr>
+<tr>
+<td><strong>Telecommunications</strong></td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: right;">$40-80B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">TreeList, Charts</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;"><a href="telco/">Link</a></td>
+</tr>
+<tr>
+<td><strong>Grant Systems</strong></td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: right;">$5-15B</td>
+<td style="text-align: center;">80-95%</td>
+<td style="text-align: center;">Gantt, PivotGrid</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;"><a href="grants/">Link</a></td>
+</tr>
+<tr>
+<td>Manufacturing</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$40-70B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">Gauges, DataGrid</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Retail/E-commerce</td>
+<td style="text-align: center;">★★☆☆☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: right;">$25-50B</td>
+<td style="text-align: center;">40-60%</td>
+<td style="text-align: center;">DataGrid, Gallery</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Logistics</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$20-40B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">VectorMap, Gantt</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Real Estate</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$10-20B</td>
+<td style="text-align: center;">60-80%</td>
+<td style="text-align: center;">Gallery, Scheduler</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Non-profit</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$5-10B</td>
+<td style="text-align: center;">80-95%</td>
+<td style="text-align: center;">Charts, Form</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Legal Sector</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$10-20B</td>
+<td style="text-align: center;">60-80%</td>
+<td style="text-align: center;">DataGrid, FileManager</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Construction</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$15-30B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">Gantt, Gallery</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Energy/Utilities</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$20-40B</td>
+<td style="text-align: center;">50-70%</td>
+<td style="text-align: center;">Gauges, VectorMap</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Agriculture</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$8-15B</td>
+<td style="text-align: center;">60-80%</td>
+<td style="text-align: center;">VectorMap, Charts</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Tourism/Hospitality</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$10-20B</td>
+<td style="text-align: center;">60-80%</td>
+<td style="text-align: center;">Scheduler, Gallery</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Sports/Events</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: right;">$5-10B</td>
+<td style="text-align: center;">70-85%</td>
+<td style="text-align: center;">Scheduler, DataGrid</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="analysis-findings">Analysis Findings<a class="headerlink" href="#analysis-findings" title="Permanent link">&para;</a></h2>
+<h3 id="summary-observations">Summary Observations<a class="headerlink" href="#summary-observations" title="Permanent link">&para;</a></h3>
+<p>The industry analysis revealed three fundamental findings:</p>
+<p><strong>1. Universal Applicability</strong></p>
+<p>The FormFiller architecture is not a tool optimized for a single vertical, but a <strong>horizontal platform</strong> that is meaningfully applicable in 16 out of 18 analyzed industries (★★★☆☆ or better). This is not coincidental: every industry fundamentally solves the same problems - data collection, validation, workflow, reporting - just in different domain languages.</p>
+<p><strong>2. Inverted Cost-Complexity Ratio</strong></p>
+<p>With traditional solutions, cost grows exponentially with complexity. With FormFiller, this curve is <strong>flat</strong>: a simple form and a 50-field, 15-validation-rule complex workflow <strong>require the same infrastructure</strong>. The only difference is the JSON schema size.</p>
+<p><strong>3. AI-Native Architecture Advantage</strong></p>
+<p>The unified JSON schema representation is not just technical elegance - it enables AI integration to <strong>work identically across all industries</strong>. No industry-specific AI models are needed: the same generation, validation, and auto-fill engine works from healthcare anamnesis to grant applications.</p>
+<h3 id="in-numbers">In Numbers<a class="headerlink" href="#in-numbers" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Industries analyzed</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Immediately applicable (★★★★☆+)</td>
+<td>12 (67%)</td>
+</tr>
+<tr>
+<td>Total market size (TAM)</td>
+<td>$400-850B</td>
+</tr>
+<tr>
+<td>Average savings</td>
+<td>60-80%</td>
+</tr>
+<tr>
+<td>High AI potential</td>
+<td>10 industries (56%)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="historical-parallel-the-sql-moment">Historical Parallel: The SQL Moment<a class="headerlink" href="#historical-parallel-the-sql-moment" title="Permanent link">&para;</a></h2>
+<h3 id="the-problem-then-and-now">The Problem Then and Now<a class="headerlink" href="#the-problem-then-and-now" title="Permanent link">&para;</a></h3>
+<p>To understand the significance of FormFiller architecture, it's worth looking back at one of the largest paradigm shifts in IT history.</p>
+<p><strong>Before the 1970s</strong>, every application used its own unique data storage solution:</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph before["PRE-SQL: Fragmented World"]
+        A["Application A"] --&gt; DA["Custom file format"]
+        B["Application B"] --&gt; DB["Hierarchical database"]
+        C["Application C"] --&gt; DC["Network model"]
+    end
+
+    DA -.-&gt; P1["• Own query language"]
+    DB -.-&gt; P2["• Own optimization"]
+    DC -.-&gt; P3["• Own backup/restore"]
+    DA -.-&gt; P4["• Own access control"]</code></pre>
+<p>Every new application required reimplementing every aspect of data management.</p>
+<p><strong>SQL and the relational model</strong> eliminated this fragmentation with a single, universal abstraction:</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph after["POST-SQL: Unified Model"]
+        A2["Application A"] --&gt; SQL
+        B2["Application B"] --&gt; SQL
+        C2["Application C"] --&gt; SQL
+        SQL["SQL + RDBMS&lt;br/&gt;(unified)"]
+    end
+
+    SQL -.-&gt; U1["✓ One query language"]
+    SQL -.-&gt; U2["✓ One optimization engine"]
+    SQL -.-&gt; U3["✓ One backup/restore"]
+    SQL -.-&gt; U4["✓ One access control"]</code></pre>
+<h3 id="the-formfiller-parallel">The FormFiller Parallel<a class="headerlink" href="#the-formfiller-parallel" title="Permanent link">&para;</a></h3>
+<p><strong>2020s</strong> - The world of forms and workflows is exactly where databases were before SQL:</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph now["TODAY: Fragmented Form World"]
+        H["Healthcare"] --&gt; EH["Epic/Cerner"]
+        F["Finance"] --&gt; EF["Salesforce"]
+        G["Public Sector"] --&gt; EG["Custom development"]
+    end
+
+    EH -.-&gt; X1["• Own form definition"]
+    EF -.-&gt; X2["• Own validation language"]
+    EG -.-&gt; X3["• Own workflow engine"]
+    EH -.-&gt; X4["• Own UI rendering"]
+    EF -.-&gt; X5["• Own API structure"]</code></pre>
+<p><strong>FormFiller architecture</strong> performs the same unification in the form world:</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph future["FORMFILLER: Unified Model"]
+        H2["Healthcare"] --&gt; FF
+        F2["Finance"] --&gt; FF
+        G2["Public Sector"] --&gt; FF
+        FF["FormFiller Schema&lt;br/&gt;(unified)"]
+    end
+
+    FF -.-&gt; Y1["✓ One schema format (JSON)"]
+    FF -.-&gt; Y2["✓ One validation engine"]
+    FF -.-&gt; Y3["✓ One workflow engine"]
+    FF -.-&gt; Y4["✓ Swappable UI renderers"]
+    FF -.-&gt; Y5["✓ Unified API"]</code></pre>
+<h3 id="why-did-sql-work">Why Did SQL Work?<a class="headerlink" href="#why-did-sql-work" title="Permanent link">&para;</a></h3>
+<p>SQL's success wasn't in its syntax, but in finding the <strong>right abstraction level</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>SQL/Relational model</th>
+<th>FormFiller Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Declarative</strong></td>
+<td>WHAT I want, not HOW</td>
+<td>WHAT I collect, not HOW I render</td>
+</tr>
+<tr>
+<td><strong>Implementation-independent</strong></td>
+<td>Any RDBMS can interpret</td>
+<td>Any renderer can display</td>
+</tr>
+<tr>
+<td><strong>Mathematically grounded</strong></td>
+<td>Relational algebra</td>
+<td>JSON Schema + validation rules</td>
+</tr>
+<tr>
+<td><strong>Extensible</strong></td>
+<td>Stored procedures, triggers</td>
+<td>Custom components, workflow steps</td>
+</tr>
+<tr>
+<td><strong>Optimizable</strong></td>
+<td>Query optimizer</td>
+<td>Conditional rendering, lazy loading</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-ai-dimension-what-sql-couldnt-do">The AI Dimension: What SQL Couldn't Do<a class="headerlink" href="#the-ai-dimension-what-sql-couldnt-do" title="Permanent link">&para;</a></h3>
+<p>There is, however, a critical difference that potentially makes FormFiller architecture even more significant:</p>
+<p><strong>In the SQL era, databases were passive stores</strong> - intelligence lived in the application.</p>
+<p><strong>In the FormFiller era, AI can be an active partner</strong> - the unified schema enables:</p>
+<table>
+<thead>
+<tr>
+<th>AI Capability</th>
+<th>In SQL World</th>
+<th>In FormFiller World</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Generation</strong></td>
+<td>❌ Not interpreted</td>
+<td>✅ Schema generation from natural language</td>
+</tr>
+<tr>
+<td><strong>Validation</strong></td>
+<td>⚠️ Constraints, but not contextual</td>
+<td>✅ Semantic validation, anomaly detection</td>
+</tr>
+<tr>
+<td><strong>Filling</strong></td>
+<td>❌ Not interpreted</td>
+<td>✅ Auto-complete, predictive input</td>
+</tr>
+<tr>
+<td><strong>Analysis</strong></td>
+<td>⚠️ OLAP, but manual setup</td>
+<td>✅ Automatic pattern recognition</td>
+</tr>
+</tbody>
+</table>
+<h3 id="repeating-the-database-moment">Repeating the "Database Moment"<a class="headerlink" href="#repeating-the-database-moment" title="Permanent link">&para;</a></h3>
+<p>SQL didn't win overnight - it took decades for hierarchical and network models to disappear. But the transition was inevitable because SQL <strong>radically reduced complexity</strong> without sacrificing expressiveness.</p>
+<p>FormFiller architecture aims for the same balance:</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph before["Before: N Systems"]
+        E1["Epic"] --&gt; |"N×development"| D1["N×data model"]
+        S1["Salesforce"] --&gt; |"N×development"| D1
+        C1["Custom"] --&gt; |"N×development"| D1
+    end
+
+    subgraph after["After: 1 Platform"]
+        SCHEMA["FormFiller Schema"] --&gt; |"1×development"| CORE["Core Engine"]
+        CORE --&gt; R1["Renderer 1"]
+        CORE --&gt; R2["Renderer 2"]
+        CORE --&gt; R3["Renderer N"]
+    end
+
+    before --&gt; |"Paradigm shift"| after</code></pre>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<p>FormFiller is not "yet another form builder". It is <strong>structural innovation</strong> that can fill the same role in the world of form-based data collection and workflow management as SQL/RDBMS did in data storage.</p>
+<p>The difference: while SQL needed decades to spread, FormFiller arrives in the AI era, where unified, machine-interpretable representation provides <strong>immediate, exponential advantages</strong>.</p>
+<blockquote>
+<p><em>"SQL didn't win because it was better than all alternatives in every way. It won because it was good enough for enough things, and radically simplified the ecosystem."</em></p>
+<p>FormFiller follows the same path - but in the AI era, this path may be shorter.</p>
+</blockquote>
+<hr />
+<h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../">Applicability Main Page</a> - Comprehensive summary</li>
+<li><a href="../functions/">Functional Analysis</a> - Function-based evaluation</li>
+<li><a href="../extensions/">Extension Possibilities</a> - Development directions</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/LowCoders" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

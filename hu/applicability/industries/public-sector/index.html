@@ -1,0 +1,4058 @@
+
+<!doctype html>
+<html lang="hu" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Modern low-code framework documentation with form management focus">
+      
+      
+        <meta name="author" content="FormFiller Team">
+      
+      
+      
+        <link rel="prev" href="../education/">
+      
+      
+        <link rel="next" href="../hr/">
+      
+      
+        
+          <link rel="alternate" href="../../../../applicability/industries/public-sector/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="hu">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Közszféra - FormFiller Dokumentáció</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kozigazgatas" class="md-skip">
+          Kihagyás
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Élőfej">
+    <a href="../../../" title="FormFiller Dokumentáció" class="md-header__button md-logo" aria-label="FormFiller Dokumentáció" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FormFiller Dokumentáció
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Közszféra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Nyelvváltás">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../applicability/industries/public-sector/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="hu" class="md-select__link">
+              Magyar
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Keresés" placeholder="Keresés" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Keresés">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Törlés" aria-label="Törlés" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Keresés inicializálása
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LowCoders/formfiller-docs" title="Főoldalra ugrás" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    formfiller-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Lapok" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Főoldal
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../architecture/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architektúra
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../comparison/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Összehasonlítás
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../developer/" class="md-tabs__link">
+          
+  
+  
+  Fejlesztői Dokumentáció
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user/" class="md-tabs__link">
+          
+  
+  
+  Felhasználói Dokumentáció
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../deployment/" class="md-tabs__link">
+          
+  
+  
+  Telepítés
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Alkalmazhatóság
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigáció" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="FormFiller Dokumentáció" class="md-nav__button md-logo" aria-label="FormFiller Dokumentáció" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FormFiller Dokumentáció
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LowCoders/formfiller-docs" title="Főoldalra ugrás" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    formfiller-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Főoldal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architektúra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Összehasonlítás
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fejlesztői Dokumentáció
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fejlesztői Dokumentáció
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Referencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/event-handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eseménykezelés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/form-components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Űrlap Komponensek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validáció
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_9" id="__nav_5_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funkciók
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Funkciók
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/ai-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Interfész
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/data-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adatkezelés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/multisite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multisite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/rbac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RBAC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/theming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Témázás
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/user-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Felhasználókezelés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/features/workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Felhasználói Dokumentáció
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Felhasználói Dokumentáció
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kezdő Lépések
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user/form-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Űrlap Konfiguráció
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user/admin-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adminisztrációs Útmutató
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telepítés
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Telepítés
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/traditional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hagyományos (VPS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alkalmazhatóság
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Alkalmazhatóság
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iparágak
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Iparágak
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../healthcare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Egészségügy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../finance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pénzügy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oktatás
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Közszféra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Közszféra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tartalomjegyzék">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tartalomjegyzék
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tartalomjegyzek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tartalomjegyzék
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iparagi-attekintes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iparági Áttekintés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iparági Áttekintés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#piaci-meret-es-jellemzok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Piaci Méret és Jellemzők
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hagyomanyos-megoldasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hagyományos Megoldások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magyar-kontextus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Magyar Kontextus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jellemzo-igenyek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jellemző Igények
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jellemző Igények">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#urlap-tipusok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Űrlap Típusok
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specialis-kovetelmenyek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speciális Követelmények
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bovitesi-lehetosegek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítési Lehetőségek
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bővítési Lehetőségek">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relevans-komponensek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releváns Komponensek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konkret-use-case-ek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konkrét Use Case-ek
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-integracio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Integráció
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Integráció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-felhasznalasi-esetek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Felhasználási Esetek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-schema-szinergia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI + Schema Szinergia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pelda-ai-tamogatott-ugyintezes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Példa: AI-támogatott Ügyintézés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-elonyok-osszefoglalva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Előnyök Összefoglalva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formfiller-megfeleltetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Megfeleltetés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FormFiller Megfeleltetés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jelenleg-tamogatott-funkciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jelenleg Támogatott Funkciók
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bovitessel-tamogathato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítéssel Támogatható
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osszehasonlito-tablazat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Összehasonlító Táblázat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Összehasonlító Táblázat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-vs-hagyomanyos-megoldasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller vs. Hagyományos Megoldások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funkcionalis-osszehasonlitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funkcionális Összehasonlítás
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prokontra-elemzes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pro/Kontra Elemzés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pro/Kontra Elemzés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-elonyok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Előnyök
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-hatranyokkorlatozasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Hátrányok/Korlátozások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mikor-valaszd-a-formfiller-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mikor Válaszd a FormFiller-t?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bovitesi-javaslatok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítési Javaslatok
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bővítési Javaslatok">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prioritasos-fejlesztesek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritásos Fejlesztések
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pelda-epitesi-engedely-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Példa: Építési Engedély Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uzleti-ertekeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Üzleti Értékelés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Üzleti Értékelés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osszefoglalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Összefoglaló
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roi-becsles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROI Becslés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celpiac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Célpiac
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kapcsolodo-dokumentaciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kapcsolódó Dokumentációk
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telekommunikáció
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pályázatok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funkciók
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Funkciók
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áttekintés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/approval-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jóváhagyási Folyamat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/configurator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfigurátor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/survey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kérdőív
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/ticketing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jegykezelés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creative-uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kreatív Felhasználások
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bővítmények
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tartalomjegyzék">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tartalomjegyzék
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tartalomjegyzek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tartalomjegyzék
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iparagi-attekintes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iparági Áttekintés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iparági Áttekintés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#piaci-meret-es-jellemzok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Piaci Méret és Jellemzők
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hagyomanyos-megoldasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hagyományos Megoldások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magyar-kontextus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Magyar Kontextus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jellemzo-igenyek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jellemző Igények
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jellemző Igények">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#urlap-tipusok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Űrlap Típusok
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specialis-kovetelmenyek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speciális Követelmények
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bovitesi-lehetosegek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítési Lehetőségek
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bővítési Lehetőségek">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relevans-komponensek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releváns Komponensek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konkret-use-case-ek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konkrét Use Case-ek
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-integracio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Integráció
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Integráció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-felhasznalasi-esetek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Felhasználási Esetek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-schema-szinergia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI + Schema Szinergia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pelda-ai-tamogatott-ugyintezes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Példa: AI-támogatott Ügyintézés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-elonyok-osszefoglalva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Előnyök Összefoglalva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formfiller-megfeleltetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Megfeleltetés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FormFiller Megfeleltetés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jelenleg-tamogatott-funkciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jelenleg Támogatott Funkciók
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bovitessel-tamogathato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítéssel Támogatható
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osszehasonlito-tablazat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Összehasonlító Táblázat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Összehasonlító Táblázat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-vs-hagyomanyos-megoldasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller vs. Hagyományos Megoldások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funkcionalis-osszehasonlitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funkcionális Összehasonlítás
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prokontra-elemzes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pro/Kontra Elemzés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pro/Kontra Elemzés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-elonyok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Előnyök
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formfiller-hatranyokkorlatozasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FormFiller Hátrányok/Korlátozások
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mikor-valaszd-a-formfiller-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mikor Válaszd a FormFiller-t?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bovitesi-javaslatok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bővítési Javaslatok
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bővítési Javaslatok">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prioritasos-fejlesztesek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritásos Fejlesztések
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pelda-epitesi-engedely-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Példa: Építési Engedély Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uzleti-ertekeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Üzleti Értékelés
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Üzleti Értékelés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osszefoglalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Összefoglaló
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roi-becsles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROI Becslés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celpiac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Célpiac
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kapcsolodo-dokumentaciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kapcsolódó Dokumentációk
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<p><a href="../">← Vissza az Iparágak oldalra</a></p>
+<h1 id="kozigazgatas">Közigazgatás<a class="headerlink" href="#kozigazgatas" title="Permanent link">&para;</a></h1>
+<p>A közigazgatás és állami szektor kiemelt terület a FormFiller számára, ahol az e-government, digitális ügyintézés és belső adminisztráció terén jelentős értéket teremthet.</p>
+<h2 id="tartalomjegyzek">Tartalomjegyzék<a class="headerlink" href="#tartalomjegyzek" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#iparági-áttekintés">Iparági Áttekintés</a></li>
+<li><a href="#jellemző-igények">Jellemző Igények</a></li>
+<li><a href="#bővítési-lehetőségek">Bővítési Lehetőségek</a></li>
+<li><a href="#ai-integráció">AI Integráció</a></li>
+<li><a href="#formfiller-megfeleltetés">FormFiller Megfeleltetés</a></li>
+<li><a href="#összehasonlító-táblázat">Összehasonlító Táblázat</a></li>
+<li><a href="#prokontra-elemzés">Pro/Kontra Elemzés</a></li>
+<li><a href="#bővítési-javaslatok">Bővítési Javaslatok</a></li>
+<li><a href="#üzleti-értékelés">Üzleti Értékelés</a></li>
+</ol>
+<hr />
+<h2 id="iparagi-attekintes">Iparági Áttekintés<a class="headerlink" href="#iparagi-attekintes" title="Permanent link">&para;</a></h2>
+<h3 id="piaci-meret-es-jellemzok">Piaci Méret és Jellemzők<a class="headerlink" href="#piaci-meret-es-jellemzok" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Jellemző</th>
+<th>Érték</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Globális piaci méret</strong></td>
+<td>$30-60 Mrd (e-government IT)</td>
+</tr>
+<tr>
+<td><strong>Éves növekedés</strong></td>
+<td>12-18%</td>
+</tr>
+<tr>
+<td><strong>Fő régiók</strong></td>
+<td>EU, Észak-Amerika, Ázsia</td>
+</tr>
+<tr>
+<td><strong>Fő hajtóerő</strong></td>
+<td>Digitalizáció, hatékonyság</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hagyomanyos-megoldasok">Hagyományos Megoldások<a class="headerlink" href="#hagyomanyos-megoldasok" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Szoftver</th>
+<th>Típus</th>
+<th>Piaci pozíció</th>
+<th>Jellemző ár</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SAP Public Sector</strong></td>
+<td>ERP + Forms</td>
+<td>Piacvezető</td>
+<td>$1M - $50M</td>
+</tr>
+<tr>
+<td><strong>Oracle</strong></td>
+<td>ERP + E-Gov</td>
+<td>Erős</td>
+<td>$500K - $20M</td>
+</tr>
+<tr>
+<td><strong>Microsoft Dynamics</strong></td>
+<td>CRM + ERP</td>
+<td>Növekvő</td>
+<td>$100K - $5M</td>
+</tr>
+<tr>
+<td><strong>Egyedi fejlesztés</strong></td>
+<td>Testreszabott</td>
+<td>Gyakori</td>
+<td>$100K - $10M</td>
+</tr>
+<tr>
+<td><strong>Adobe Experience</strong></td>
+<td>Űrlapkezelés</td>
+<td>Forms</td>
+<td>$50K - $500K/év</td>
+</tr>
+</tbody>
+</table>
+<h3 id="magyar-kontextus">Magyar Kontextus<a class="headerlink" href="#magyar-kontextus" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ügyfélkapu / Digitális Állampolgárság Program</strong></li>
+<li><strong>E-papír, E-kérelem rendszerek</strong></li>
+<li><strong>KIRA, KGR (Költségvetési Gazdálkodási Rendszer)</strong></li>
+<li><strong>Önkormányzati ASP</strong></li>
+</ul>
+<hr />
+<h2 id="jellemzo-igenyek">Jellemző Igények<a class="headerlink" href="#jellemzo-igenyek" title="Permanent link">&para;</a></h2>
+<h3 id="urlap-tipusok">Űrlap Típusok<a class="headerlink" href="#urlap-tipusok" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>mindmap
+  root((Közigazgatási&lt;br/&gt;Űrlapok))
+    Állampolgári ügyek
+      Lakcímbejelentés
+      Személyi okmány
+      Szociális támogatás
+      Panasz/Beadvány
+    Vállalkozói ügyek
+      Működési engedély
+      Adószám igénylés
+      Közbeszerzés
+      Statisztika
+    Engedélyezés
+      Építési engedély
+      Környezetvédelmi
+      Tevékenységi
+      Szakhatósági
+    Belső adminisztráció
+      Szabadságkérelem
+      Kiküldetés
+      Beszerzés
+      Értékelés
+    Választások
+      Névjegyzék
+      Mozgóurna
+      Külképviselet
+    Pályázatok
+      EU pályázat
+      Hazai
+      Beszámolók</code></pre>
+<h3 id="specialis-kovetelmenyek">Speciális Követelmények<a class="headerlink" href="#specialis-kovetelmenyek" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Követelmény</th>
+<th>Leírás</th>
+<th>FormFiller támogatás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Akadálymentesség</strong></td>
+<td>WCAG 2.1 AA megfelelés</td>
+<td>🔶 Részben</td>
+</tr>
+<tr>
+<td><strong>Ügyfélkapu integráció</strong></td>
+<td>Magyar e-azonosítás</td>
+<td>🔶 Bővítéssel</td>
+</tr>
+<tr>
+<td><strong>E-aláírás</strong></td>
+<td>Hitelesített elektronikus aláírás</td>
+<td>🔶 Tervezett</td>
+</tr>
+<tr>
+<td><strong>ÁNYK formátum</strong></td>
+<td>Általános Nyomtatványkitöltő</td>
+<td>🔶 Export</td>
+</tr>
+<tr>
+<td><strong>Multisite</strong></td>
+<td>Több önkormányzat</td>
+<td>✅ Beépített</td>
+</tr>
+<tr>
+<td><strong>Audit trail</strong></td>
+<td>Jogszabályi megfelelés</td>
+<td>✅ Beépített</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="bovitesi-lehetosegek">Bővítési Lehetőségek<a class="headerlink" href="#bovitesi-lehetosegek" title="Permanent link">&para;</a></h2>
+<p>A FormFiller a közigazgatásban különösen hasznos komponenseket biztosít.</p>
+<h3 id="relevans-komponensek">Releváns Komponensek<a class="headerlink" href="#relevans-komponensek" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Komponens</th>
+<th>Közigazgatási Alkalmazás</th>
+<th>Előny</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gantt</strong></td>
+<td>Projekt ütemezés, pályázatok</td>
+<td>Vizuális időterv</td>
+</tr>
+<tr>
+<td><strong>Diagram</strong></td>
+<td>Workflow vizualizáció</td>
+<td>Jóváhagyási folyamatok</td>
+</tr>
+<tr>
+<td><strong>TreeView</strong></td>
+<td>Szervezeti struktúra</td>
+<td>Hierarchia megjelenítés</td>
+</tr>
+<tr>
+<td><strong>FileManager</strong></td>
+<td>Iratkezelés</td>
+<td>Dokumentumok, csatolmányok</td>
+</tr>
+<tr>
+<td><strong>DataGrid</strong></td>
+<td>Ügyek listája, keresés</td>
+<td>Szűrés, export</td>
+</tr>
+<tr>
+<td><strong>Charts</strong></td>
+<td>Statisztika, dashboard</td>
+<td>KPI monitoring</td>
+</tr>
+<tr>
+<td><strong>Scheduler</strong></td>
+<td>Időpontfoglalás</td>
+<td>Ügyfélfogadás</td>
+</tr>
+</tbody>
+</table>
+<h3 id="konkret-use-case-ek">Konkrét Use Case-ek<a class="headerlink" href="#konkret-use-case-ek" title="Permanent link">&para;</a></h3>
+<h4 id="engedelyezesi-folyamat-vizualizacio-diagram">Engedélyezési Folyamat Vizualizáció (Diagram)<a class="headerlink" href="#engedelyezesi-folyamat-vizualizacio-diagram" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>flowchart TB
+    subgraph workflow["Építési Engedély Workflow"]
+        START["Kérelem&lt;br/&gt;beérkezés"] --&gt; CHECK["Formai&lt;br/&gt;ellenőrzés"]
+        CHECK --&gt;|"hiánypótlás"| RETURN["Visszaküldés"]
+        CHECK --&gt;|"megfelelő"| TECH["Szakhatósági&lt;br/&gt;vélemény"]
+        TECH --&gt; DECISION["Döntés"]
+        DECISION --&gt;|"elutasítva"| REJECT["Elutasítás"]
+        DECISION --&gt;|"jóváhagyva"| APPROVE["Engedély&lt;br/&gt;kiállítás"]
+    end</code></pre>
+<h4 id="projekt-monitoring-gantt">Projekt Monitoring (Gantt)<a class="headerlink" href="#projekt-monitoring-gantt" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Funkció</th>
+<th>Gantt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pályázat ütemterv</td>
+<td>Feladatok, mérföldkövek</td>
+</tr>
+<tr>
+<td>EU projekt</td>
+<td>Szakaszok, függőségek</td>
+</tr>
+<tr>
+<td>Beruházás követés</td>
+<td>Erőforrás nézet</td>
+</tr>
+<tr>
+<td>Határidő figyelmeztetés</td>
+<td>SLA integráció</td>
+</tr>
+</tbody>
+</table>
+<h4 id="statisztikai-dashboard-charts">Statisztikai Dashboard (Charts)<a class="headerlink" href="#statisztikai-dashboard-charts" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Chart típus</th>
+<th>Alkalmazás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bar Chart</strong></td>
+<td>Ügyszám összehasonlítás</td>
+</tr>
+<tr>
+<td><strong>Line Chart</strong></td>
+<td>Trend elemzés</td>
+</tr>
+<tr>
+<td><strong>Pie Chart</strong></td>
+<td>Ügy típus megoszlás</td>
+</tr>
+<tr>
+<td><strong>Gauges</strong></td>
+<td>SLA teljesülés</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ai-integracio">AI Integráció<a class="headerlink" href="#ai-integracio" title="Permanent link">&para;</a></h2>
+<p>Az egységes JSON schema architektúra hatékony AI integrációt tesz lehetővé a közigazgatásban.</p>
+<h3 id="ai-felhasznalasi-esetek">AI Felhasználási Esetek<a class="headerlink" href="#ai-felhasznalasi-esetek" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>AI Funkció</th>
+<th>Leírás</th>
+<th>Várható Haszon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kérelem osztályozás</strong></td>
+<td>Automatikus routing</td>
+<td>70% gyorsabb továbbítás</td>
+</tr>
+<tr>
+<td><strong>Dokumentum OCR</strong></td>
+<td>Igazolványok, okmányok</td>
+<td>80% adatrögzítés megtakarítás</td>
+</tr>
+<tr>
+<td><strong>Hiánypótlás javaslat</strong></td>
+<td>Hiányzó dokumentumok</td>
+<td>Kevesebb körlevél</td>
+</tr>
+<tr>
+<td><strong>Természetes nyelvű keresés</strong></td>
+<td>"Mutasd a függő ügyeket"</td>
+<td>Gyors lekérdezés</td>
+</tr>
+<tr>
+<td><strong>Automatikus válasz</strong></td>
+<td>Sablonlevél generálás</td>
+<td>50% ügyintézési idő csökkentés</td>
+</tr>
+<tr>
+<td><strong>Prioritás meghatározás</strong></td>
+<td>Sürgősség becslés</td>
+<td>Hatékonyabb erőforrás allokáció</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-schema-szinergia">AI + Schema Szinergia<a class="headerlink" href="#ai-schema-szinergia" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TB
+    subgraph input["Bemenetek"]
+        REQ["Kérelem&lt;br/&gt;űrlap"]
+        DOC["Csatolmányok&lt;br/&gt;(PDF, kép)"]
+        HIST["Korábbi&lt;br/&gt;ügyek"]
+    end
+
+    subgraph ai["AI Feldolgozás"]
+        CLASS["Osztályozás"]
+        OCR["OCR + Extrakció"]
+        ROUTE["Routing"]
+        PRIO["Prioritás"]
+    end
+
+    subgraph output["Kimenet"]
+        AUTO["Auto-kitöltés"]
+        ASSIGN["Ügyintéző&lt;br/&gt;hozzárendelés"]
+        ALERT["Figyelmeztetések"]
+        TEMPLATE["Válasz sablon"]
+    end
+
+    REQ --&gt; CLASS --&gt; ASSIGN
+    DOC --&gt; OCR --&gt; AUTO
+    HIST --&gt; ROUTE --&gt; ASSIGN
+    CLASS --&gt; PRIO --&gt; ALERT
+    HIST --&gt; TEMPLATE</code></pre>
+<h3 id="pelda-ai-tamogatott-ugyintezes">Példa: AI-támogatott Ügyintézés<a class="headerlink" href="#pelda-ai-tamogatott-ugyintezes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Lépés</th>
+<th>AI Funkció</th>
+<th>Eredmény</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Kérelem beérkezés</td>
+<td>Automatikus kategorizálás</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Csatolmány OCR</td>
+<td>Adatok kinyerése</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hiányosság ellenőrzés</td>
+<td>Hiánypótlás lista generálás</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ügyintéző javaslat</td>
+<td>Kompetencia alapú routing</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Válasz sablon</td>
+<td>Automatikus szöveg generálás</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-elonyok-osszefoglalva">AI Előnyök Összefoglalva<a class="headerlink" href="#ai-elonyok-osszefoglalva" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Előny</th>
+<th>Hagyományos</th>
+<th>AI-támogatott</th>
+<th>Javulás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ügy routing</td>
+<td>1-2 óra</td>
+<td>&lt; 5 perc</td>
+<td>95%</td>
+</tr>
+<tr>
+<td>Adatrögzítés</td>
+<td>15-20 perc</td>
+<td>3-5 perc</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>Válaszlevél</td>
+<td>30 perc</td>
+<td>5 perc</td>
+<td>83%</td>
+</tr>
+<tr>
+<td>Hiánypótlás azonosítás</td>
+<td>10 perc</td>
+<td>1 perc</td>
+<td>90%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="formfiller-megfeleltetes">FormFiller Megfeleltetés<a class="headerlink" href="#formfiller-megfeleltetes" title="Permanent link">&para;</a></h2>
+<h3 id="jelenleg-tamogatott-funkciok">Jelenleg Támogatott Funkciók<a class="headerlink" href="#jelenleg-tamogatott-funkciok" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Funkció</th>
+<th>FormFiller képesség</th>
+<th>Megjegyzés</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kérelem űrlapok</strong></td>
+<td>✅ Kiváló</td>
+<td>Komplex validáció</td>
+</tr>
+<tr>
+<td><strong>Engedélyezési workflow</strong></td>
+<td>✅ Kiváló</td>
+<td>Többlépcsős jóváhagyás</td>
+</tr>
+<tr>
+<td><strong>Belső adminisztráció</strong></td>
+<td>★★★★★</td>
+<td>Natív támogatás</td>
+</tr>
+<tr>
+<td><strong>Statisztikai adatgyűjtés</strong></td>
+<td>✅ Jó</td>
+<td>Export funkciók</td>
+</tr>
+<tr>
+<td><strong>Panaszkezelés</strong></td>
+<td>✅ Jó</td>
+<td>Ticketing workflow</td>
+</tr>
+<tr>
+<td><strong>Multisite (több önkormányzat)</strong></td>
+<td>✅ Kiváló</td>
+<td>Tenant izoláció</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bovitessel-tamogathato">Bővítéssel Támogatható<a class="headerlink" href="#bovitessel-tamogathato" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Funkció</th>
+<th>Szükséges bővítés</th>
+<th>Komplexitás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ügyfélkapu integráció</strong></td>
+<td>OAuth/SAML</td>
+<td>Közepes</td>
+</tr>
+<tr>
+<td><strong>E-aláírás (hitelesített)</strong></td>
+<td>E-Szignó, Microsec</td>
+<td>Közepes</td>
+</tr>
+<tr>
+<td><strong>ÁNYK export</strong></td>
+<td>XML konverter</td>
+<td>Alacsony</td>
+</tr>
+<tr>
+<td><strong>PDF/A archiválás</strong></td>
+<td>PDF motor</td>
+<td>Alacsony</td>
+</tr>
+<tr>
+<td><strong>WCAG 2.1 teljes</strong></td>
+<td>A11y fejlesztés</td>
+<td>Közepes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="osszehasonlito-tablazat">Összehasonlító Táblázat<a class="headerlink" href="#osszehasonlito-tablazat" title="Permanent link">&para;</a></h2>
+<h3 id="formfiller-vs-hagyomanyos-megoldasok">FormFiller vs. Hagyományos Megoldások<a class="headerlink" href="#formfiller-vs-hagyomanyos-megoldasok" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Szempont</th>
+<th style="text-align: center;">SAP PS</th>
+<th style="text-align: center;">Oracle</th>
+<th style="text-align: center;">Egyedi fejl.</th>
+<th style="text-align: center;">FormFiller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ár (éves)</strong></td>
+<td style="text-align: center;">€500K+</td>
+<td style="text-align: center;">€300K+</td>
+<td style="text-align: center;">€200K+</td>
+<td style="text-align: center;">€15-30K*</td>
+</tr>
+<tr>
+<td><strong>Implementáció</strong></td>
+<td style="text-align: center;">12-24 hó</td>
+<td style="text-align: center;">12-18 hó</td>
+<td style="text-align: center;">6-12 hó</td>
+<td style="text-align: center;">1-3 hó</td>
+</tr>
+<tr>
+<td><strong>Testreszabás</strong></td>
+<td style="text-align: center;">Komplex</td>
+<td style="text-align: center;">Komplex</td>
+<td style="text-align: center;">Teljes</td>
+<td style="text-align: center;">Egyszerű</td>
+</tr>
+<tr>
+<td><strong>Self-hosted</strong></td>
+<td style="text-align: center;">Drága</td>
+<td style="text-align: center;">Drága</td>
+<td style="text-align: center;">Igen</td>
+<td style="text-align: center;">Igen</td>
+</tr>
+<tr>
+<td><strong>Multisite</strong></td>
+<td style="text-align: center;">Igen</td>
+<td style="text-align: center;">Igen</td>
+<td style="text-align: center;">Egyedi</td>
+<td style="text-align: center;">Beépített</td>
+</tr>
+<tr>
+<td><strong>Workflow</strong></td>
+<td style="text-align: center;">Komplex</td>
+<td style="text-align: center;">Jó</td>
+<td style="text-align: center;">Egyedi</td>
+<td style="text-align: center;">Jó</td>
+</tr>
+<tr>
+<td><strong>Magyar nyelv</strong></td>
+<td style="text-align: center;">Részben</td>
+<td style="text-align: center;">Részben</td>
+<td style="text-align: center;">Igen</td>
+<td style="text-align: center;">Igen</td>
+</tr>
+</tbody>
+</table>
+<p>*Infrastruktúra + karbantartás költség</p>
+<h3 id="funkcionalis-osszehasonlitas">Funkcionális Összehasonlítás<a class="headerlink" href="#funkcionalis-osszehasonlitas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Funkció</th>
+<th style="text-align: center;">SAP</th>
+<th style="text-align: center;">Adobe Forms</th>
+<th style="text-align: center;">KIRA</th>
+<th style="text-align: center;">FormFiller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-ügyintézés</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td style="text-align: center;">★★★★★</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★☆☆☆</td>
+<td style="text-align: center;">★★★★☆</td>
+</tr>
+<tr>
+<td>Belső admin</td>
+<td style="text-align: center;">★★★★☆</td>
+<td style="text-align: center;">★★☆☆☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★★</td>
+</tr>
+<tr>
+<td>Testreszabás</td>
+<td style="text-align: center;">★★☆☆☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★☆☆☆☆</td>
+<td style="text-align: center;">★★★★★</td>
+</tr>
+<tr>
+<td>Költség/érték</td>
+<td style="text-align: center;">★☆☆☆☆</td>
+<td style="text-align: center;">★★☆☆☆</td>
+<td style="text-align: center;">★★★☆☆</td>
+<td style="text-align: center;">★★★★★</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prokontra-elemzes">Pro/Kontra Elemzés<a class="headerlink" href="#prokontra-elemzes" title="Permanent link">&para;</a></h2>
+<h3 id="formfiller-elonyok">FormFiller Előnyök<a class="headerlink" href="#formfiller-elonyok" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph elonyok["✅ FormFiller Előnyök"]
+        A["**Költséghatékonyság**&lt;br/&gt;90%+ megtakarítás&lt;br/&gt;Nincs licencdíj&lt;br/&gt;Alacsony TCO"]
+        B["**Adatszuverenitás**&lt;br/&gt;Adatok helyben&lt;br/&gt;Nincs külföldi felhő&lt;br/&gt;GDPR egyszerűbb"]
+        C["**Rugalmasság**&lt;br/&gt;Gyors jogszabály reagálás&lt;br/&gt;Napok alatt új űrlap&lt;br/&gt;Helyi igényekhez"]
+        D["**Multisite**&lt;br/&gt;Több önkormányzat&lt;br/&gt;Költségmegosztás&lt;br/&gt;Egységes + helyi"]
+    end
+
+    style elonyok fill:#d4edda,stroke:#28a745</code></pre>
+<h3 id="formfiller-hatranyokkorlatozasok">FormFiller Hátrányok/Korlátozások<a class="headerlink" href="#formfiller-hatranyokkorlatozasok" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph korlatok["❌ FormFiller Korlátozások"]
+        A["**Állami integráció**&lt;br/&gt;Nincs Ügyfélkapu&lt;br/&gt;KIRA/KGR egyedi&lt;br/&gt;NKP külön"]
+        B["**Tanúsítások**&lt;br/&gt;Nincs NISZ&lt;br/&gt;Audit szükséges&lt;br/&gt;Referenciák kellenek"]
+        C["**Akadálymentesség**&lt;br/&gt;WCAG 2.1 AA részleges&lt;br/&gt;Screen reader fejlesztendő"]
+        D["**Speciális formátumok**&lt;br/&gt;ÁNYK nincs&lt;br/&gt;ASP kérdéses"]
+    end
+
+    style korlatok fill:#f8d7da,stroke:#dc3545</code></pre>
+<h3 id="mikor-valaszd-a-formfiller-t">Mikor Válaszd a FormFiller-t?<a class="headerlink" href="#mikor-valaszd-a-formfiller-t" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Szcenárió</th>
+<th style="text-align: center;">Ajánlott?</th>
+<th>Indoklás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Önkormányzat belső ügyei</td>
+<td style="text-align: center;">✅ Igen</td>
+<td>Gyors, költséghatékony</td>
+</tr>
+<tr>
+<td>Önkormányzati ügyfélszolgálat</td>
+<td style="text-align: center;">✅ Igen</td>
+<td>Testreszabható</td>
+</tr>
+<tr>
+<td>Központi e-ügyintézés</td>
+<td style="text-align: center;">🔶 Részben</td>
+<td>Integrációk szükségesek</td>
+</tr>
+<tr>
+<td>KIRA kiváltás</td>
+<td style="text-align: center;">❌ Nem</td>
+<td>Speciális funkciók</td>
+</tr>
+<tr>
+<td>EU pályázat monitoring</td>
+<td style="text-align: center;">✅ Igen</td>
+<td>Workflow, riporting</td>
+</tr>
+<tr>
+<td>Belső HR folyamatok</td>
+<td style="text-align: center;">✅ Igen</td>
+<td>Natív támogatás</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="bovitesi-javaslatok">Bővítési Javaslatok<a class="headerlink" href="#bovitesi-javaslatok" title="Permanent link">&para;</a></h2>
+<h3 id="prioritasos-fejlesztesek">Prioritásos Fejlesztések<a class="headerlink" href="#prioritasos-fejlesztesek" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fejlesztés</th>
+<th>Leírás</th>
+<th style="text-align: center;">Komplexitás</th>
+<th style="text-align: center;">Prioritás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ügyfélkapu OAuth</strong></td>
+<td>Magyar e-azonosítás</td>
+<td style="text-align: center;">Közepes</td>
+<td style="text-align: center;">Magas</td>
+</tr>
+<tr>
+<td><strong>E-aláírás (AVDH)</strong></td>
+<td>Hitelesített aláírás</td>
+<td style="text-align: center;">Közepes</td>
+<td style="text-align: center;">Magas</td>
+</tr>
+<tr>
+<td><strong>WCAG 2.1 AA</strong></td>
+<td>Akadálymentesítés</td>
+<td style="text-align: center;">Közepes</td>
+<td style="text-align: center;">Magas</td>
+</tr>
+<tr>
+<td><strong>PDF/A export</strong></td>
+<td>Archiválási formátum</td>
+<td style="text-align: center;">Alacsony</td>
+<td style="text-align: center;">Közepes</td>
+</tr>
+<tr>
+<td><strong>ÁNYK export</strong></td>
+<td>XML konverzió</td>
+<td style="text-align: center;">Alacsony</td>
+<td style="text-align: center;">Közepes</td>
+</tr>
+<tr>
+<td><strong>ASP integráció</strong></td>
+<td>Önkormányzati ASP</td>
+<td style="text-align: center;">Magas</td>
+<td style="text-align: center;">Alacsony</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pelda-epitesi-engedely-workflow">Példa: Építési Engedély Workflow<a class="headerlink" href="#pelda-epitesi-engedely-workflow" title="Permanent link">&para;</a></h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;buildingPermitWorkflow&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;steps&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;submit&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;form&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;buildingPermitForm&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&quot;nextStep&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;formalCheck&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;formalCheck&quot;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approval&quot;</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">&quot;assignee&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;role:clerk&quot;</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">&quot;sla&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5 workdays&quot;</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">&quot;outcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">&quot;approved&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;technicalReview&quot;</span><span class="p">,</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">&quot;rejected&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;returnToApplicant&quot;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;technicalReview&quot;</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approval&quot;</span><span class="p">,</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="nt">&quot;assignee&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;role:engineer&quot;</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">      </span><span class="nt">&quot;sla&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15 workdays&quot;</span><span class="p">,</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">      </span><span class="nt">&quot;outcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="nt">&quot;approved&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;finalDecision&quot;</span><span class="p">,</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="nt">&quot;needsInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;requestInfo&quot;</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="nt">&quot;rejected&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;rejection&quot;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;finalDecision&quot;</span><span class="p">,</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approval&quot;</span><span class="p">,</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="nt">&quot;assignee&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;role:headOfDepartment&quot;</span><span class="p">,</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="nt">&quot;sla&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5 workdays&quot;</span><span class="p">,</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="nt">&quot;outcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="nt">&quot;approved&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;issuePermit&quot;</span><span class="p">,</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">        </span><span class="nt">&quot;rejected&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;rejection&quot;</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;issuePermit&quot;</span><span class="p">,</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;action&quot;</span><span class="p">,</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">      </span><span class="nt">&quot;actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;generatePdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;permitDocument&quot;</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;notify&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;to&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;applicant&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;permitIssued&quot;</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;archive&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pdf-a&quot;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">      </span><span class="p">]</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="uzleti-ertekeles">Üzleti Értékelés<a class="headerlink" href="#uzleti-ertekeles" title="Permanent link">&para;</a></h2>
+<h3 id="osszefoglalo">Összefoglaló<a class="headerlink" href="#osszefoglalo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Metrika</th>
+<th>Érték</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jelenlegi megfelelőség</strong></td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>Fejlesztési potenciál</strong></td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>Piaci méret (TAM)</strong></td>
+<td>$30-60 Mrd</td>
+</tr>
+<tr>
+<td><strong>Elérhető megtakarítás</strong></td>
+<td>70-90%</td>
+</tr>
+<tr>
+<td><strong>Piaci siker esélye</strong></td>
+<td>Magas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="roi-becsles">ROI Becslés<a class="headerlink" href="#roi-becsles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Szcenárió</th>
+<th style="text-align: right;">Hagyományos költség</th>
+<th style="text-align: right;">FormFiller költség</th>
+<th style="text-align: right;">Megtakarítás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kis önkormányzat (&lt;10K lakos)</td>
+<td style="text-align: right;">€30,000/év</td>
+<td style="text-align: right;">€5,000/év</td>
+<td style="text-align: right;">€25,000 (83%)</td>
+</tr>
+<tr>
+<td>Közepes önkormányzat</td>
+<td style="text-align: right;">€80,000/év</td>
+<td style="text-align: right;">€15,000/év</td>
+<td style="text-align: right;">€65,000 (81%)</td>
+</tr>
+<tr>
+<td>Megyei szint</td>
+<td style="text-align: right;">€200,000/év</td>
+<td style="text-align: right;">€40,000/év</td>
+<td style="text-align: right;">€160,000 (80%)</td>
+</tr>
+<tr>
+<td>Központi intézmény</td>
+<td style="text-align: right;">€500,000/év</td>
+<td style="text-align: right;">€80,000/év</td>
+<td style="text-align: right;">€420,000 (84%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="celpiac">Célpiac<a class="headerlink" href="#celpiac" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Szegmens</th>
+<th style="text-align: center;">Potenciál</th>
+<th style="text-align: center;">Prioritás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Önkormányzatok (belső)</td>
+<td style="text-align: center;">Magas</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>Önkormányzatok (ügyfélszolg.)</td>
+<td style="text-align: center;">Magas</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>Minisztériumok (belső)</td>
+<td style="text-align: center;">Közepes</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>Közintézmények</td>
+<td style="text-align: center;">Magas</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>EU intézmények</td>
+<td style="text-align: center;">Közepes</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="kapcsolodo-dokumentaciok">Kapcsolódó Dokumentációk<a class="headerlink" href="#kapcsolodo-dokumentaciok" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../">Iparági Összefoglaló</a></li>
+<li><a href="../grants/">Pályázati Rendszerek</a> - Kapcsolódó terület</li>
+<li><a href="../../functions/approval-workflow/">Jóváhagyási Workflow</a></li>
+<li><a href="../../functions/survey/">Felmérések</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Vissza a tetejére
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/LowCoders" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "V\u00e1g\u00f3lapra m\u00e1solva", "clipboard.copy": "M\u00e1sol\u00e1s v\u00e1g\u00f3lapra", "search.result.more.one": "1 tov\u00e1bbi tal\u00e1lat az oldalon", "search.result.more.other": "# tov\u00e1bbi tal\u00e1lat az oldalon", "search.result.none": "Nincs tal\u00e1lat", "search.result.one": "1 egyez\u0151 dokumentum", "search.result.other": "# egyez\u0151 dokumentum", "search.result.placeholder": "Keres\u00e9shez \u00edrj ide valamit", "search.result.term.missing": "\u00dcres", "select.version": "Verzi\u00f3v\u00e1lt\u00e1s"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
