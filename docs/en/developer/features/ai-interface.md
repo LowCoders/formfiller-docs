@@ -218,6 +218,25 @@ The AI-generated schema is immediately usable:
 3. **Database storage** - Structure can be stored in MongoDB
 4. **Workflow integration** - Workflow definitions are immediately executable
 
+## Technical Architecture
+
+The AI generation feature uses a dedicated backend endpoint:
+
+```
+POST /api/ai/generate-stream
+```
+
+Key technical features:
+
+- **Server-Sent Events (SSE)**: Real-time streaming of generated content
+- **Two-phase generation**: Category detection + config generation for better accuracy
+- **Token budget validation**: Ensures prompts fit within model context limits
+- **Rate limiting**: Prevents API abuse (10 requests/minute by default)
+- **Retry mechanism**: Automatic retry with exponential backoff on failures
+- **Example-based learning**: Uses seed configurations as context for generation
+
+The AI service is implemented in `src/routes/ai-generation.ts` and uses the `AIGenerationService` for LLM integration.
+
 ## Example: Complete Workflow
 
 ```

@@ -142,33 +142,58 @@ Detailed descriptions of specific features in separate documents:
 
 ## Architecture
 
-The frontend is React and TypeScript based, with Vite build system and DevExtreme UI components.
+The frontend is React and TypeScript based, with Vite build system and DevExtreme UI components. Form rendering logic has been extracted to the `formfiller-embed` package for reusability.
 
 ## Project Structure
 
 ```
 src/
 ├── components/          # React components
-│   ├── form/           # Form components
+│   ├── form/           # Form wrapper components
 │   ├── header/         # Header
 │   ├── footer/         # Footer
+│   ├── config-editor/  # Configuration editor
 │   └── views/          # View modules (Grid, Tree)
 ├── pages/              # Page components
 │   ├── home/           # Home page
 │   ├── form/           # Form page
 │   ├── results/        # Results page
-│   └── profile/        # Profile page
+│   ├── profile/        # Profile page
+│   └── admin/          # Admin pages
 ├── services/           # Business logic and API
-│   ├── dataService.ts  # API calls
-│   └── EventHandlerRegistry.ts
-├── factories/          # Renderer factories
-├── managers/           # State managers
-├── eventHandlers/      # Event handlers
-├── contexts/           # React contexts
-├── interfaces/         # TypeScript interfaces
+│   ├── configService.ts    # Config API calls
+│   ├── dataService.ts      # Data API calls
+│   └── authService.ts      # Auth API calls
+├── contexts/           # React contexts (Auth, Navigation, Theme)
+├── interfaces/         # TypeScript interfaces (re-exports from embed)
 ├── types/              # Type definitions
 ├── utils/              # Utility functions
 └── themes/             # DevExtreme themes
+```
+
+## Embed Package Integration
+
+The frontend uses the `formfiller-embed` package for form rendering. This separation provides:
+
+- **Reusability**: Same form rendering for main app and external integrations
+- **Maintainability**: Single source of truth for form logic
+- **Bundle optimization**: Embed can be loaded independently
+
+```typescript
+import { EmbedForm, useEmbedForm } from 'formfiller-embed';
+
+// Using the component
+<EmbedForm
+  configId="my-form"
+  apiBaseUrl={API_URL}
+  onSubmitSuccess={handleSuccess}
+/>
+
+// Using the hook for custom rendering
+const { formData, setFieldValue, submit } = useEmbedForm({
+  configId: 'my-form',
+  apiBaseUrl: API_URL
+});
 ```
 
 ## Renderers
@@ -200,25 +225,50 @@ Print-optimized view.
 
 ## Form Manager
 
-Central state manager for forms:
+The FormManager is the central state manager for forms, located in the `formfiller-embed` package. It has been refactored into specialized sub-managers for better maintainability:
+
+### Architecture
 
 ```typescript
-import { FormManager } from './managers/FormManager';
+import { FormManager } from 'formfiller-embed';
 
-const formManager = new FormManager();
+const formManager = new FormManager(config);
 
+// Sub-managers handle specific concerns:
+// - FormStateManager: Form data and value management
+// - FormValidationManager: Validation logic and error tracking
+// - FormVisibilityManager: Field visibility and disabled states
+```
+
+### Usage
+
+```typescript
 // Register field
 formManager.registerField('firstName', {
   value: '',
   onChange: (value) => console.log('Changed:', value)
 });
 
-// Set value
+// Set value (delegated to FormStateManager)
 formManager.setValue('firstName', 'John');
 
+// Validate (delegated to FormValidationManager)
+const isValid = await formManager.validateForm();
+
+// Check visibility (delegated to FormVisibilityManager)
+const isVisible = formManager.isFieldVisible('conditionalField');
+
 // Collect data
-const formData = formManager.collectData();
+const formData = formManager.collectFormData();
 ```
+
+### Sub-Manager Responsibilities
+
+| Manager | Responsibility |
+|---------|---------------|
+| FormStateManager | Form data storage, value get/set, data normalization |
+| FormValidationManager | Validation execution, error tracking, error callbacks |
+| FormVisibilityManager | visibleIf/disabledIf evaluation, field state updates |
 
 ## Event Handling
 

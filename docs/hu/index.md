@@ -212,6 +212,15 @@ Eredmény: 2-3 perc alatt működő rendszer
 - Form builder szolgáltatások összehasonlítása
 - Összegző táblázat csillagos értékeléssel
 
+### [Alkalmazhatóság](./applicability/index.md)
+
+- Iparági elemzés (18 iparág: egészségügy, pénzügy, közigazgatás, oktatás, HR, telco, pályázatok, stb.)
+- Funkcionális elemzés (15+ funkció: CRM, helpdesk, felmérések, workflow, konfigurátor, stb.)
+- Üzleti értékelés (ROI, TCO, megtakarítási kalkuláció)
+- Kreatív felhasználási esetek
+- Bővítési lehetőségek
+- **[Elemzési konklúzió és SQL párhuzam](./applicability/index.md#az-elemzés-konklúziója)** - Az iparági elemzés tanulságai és IT-történeti párhuzam
+
 ### [Továbbfejlesztési Lehetőségek](./roadmap.md)
 
 - AI és gépi tanulás fejlesztések

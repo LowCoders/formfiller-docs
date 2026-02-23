@@ -142,33 +142,58 @@ A specifikus funkciók részletes leírása külön dokumentumokban:
 
 ## Architektúra
 
-A frontend React és TypeScript alapú, Vite build rendszerrel és DevExtreme UI komponensekkel.
+A frontend React és TypeScript alapú, Vite build rendszerrel és DevExtreme UI komponensekkel. Az űrlap megjelenítési logika a `formfiller-embed` csomagba került az újrafelhasználhatóság érdekében.
 
 ## Projekt Struktúra
 
 ```
 src/
 ├── components/          # React komponensek
-│   ├── form/           # Űrlap komponensek
+│   ├── form/           # Űrlap wrapper komponensek
 │   ├── header/         # Fejléc
 │   ├── footer/         # Lábléc
+│   ├── config-editor/  # Konfiguráció szerkesztő
 │   └── views/          # Nézet modulok (Grid, Tree)
 ├── pages/              # Oldal komponensek
 │   ├── home/           # Kezdőlap
 │   ├── form/           # Űrlap oldal
 │   ├── results/        # Eredmények oldal
-│   └── profile/        # Profil oldal
+│   ├── profile/        # Profil oldal
+│   └── admin/          # Admin oldalak
 ├── services/           # Üzleti logika és API
-│   ├── dataService.ts  # API hívások
-│   └── EventHandlerRegistry.ts
-├── factories/          # Renderer gyárak
-├── managers/           # Állapot menedzserek
-├── eventHandlers/      # Eseménykezelők
-├── contexts/           # React kontextusok
-├── interfaces/         # TypeScript interfészek
+│   ├── configService.ts    # Config API hívások
+│   ├── dataService.ts      # Data API hívások
+│   └── authService.ts      # Auth API hívások
+├── contexts/           # React kontextusok (Auth, Navigation, Theme)
+├── interfaces/         # TypeScript interfészek (re-export az embed-ből)
 ├── types/              # Típus definíciók
 ├── utils/              # Segédfüggvények
 └── themes/             # DevExtreme témák
+```
+
+## Embed Csomag Integráció
+
+A frontend a `formfiller-embed` csomagot használja az űrlapok megjelenítéséhez. Ez a szétválasztás biztosítja:
+
+- **Újrafelhasználhatóság**: Azonos űrlap renderelés a fő alkalmazásban és külső integrációkban
+- **Karbantarthatóság**: Egyetlen forráspont az űrlap logikához
+- **Bundle optimalizáció**: Az embed önállóan betölthető
+
+```typescript
+import { EmbedForm, useEmbedForm } from 'formfiller-embed';
+
+// Komponens használata
+<EmbedForm
+  configId="my-form"
+  apiBaseUrl={API_URL}
+  onSubmitSuccess={handleSuccess}
+/>
+
+// Hook használata egyéni rendereléshez
+const { formData, setFieldValue, submit } = useEmbedForm({
+  configId: 'my-form',
+  apiBaseUrl: API_URL
+});
 ```
 
 ## Rendererek
@@ -200,25 +225,50 @@ Nyomtatásra optimalizált nézet.
 
 ## Form Manager
 
-Központi állapotkezelő az űrlapokhoz:
+A FormManager a központi állapotkezelő az űrlapokhoz, amely a `formfiller-embed` csomagban található. A jobb karbantarthatóság érdekében specializált al-menedzserekre lett bontva:
+
+### Architektúra
 
 ```typescript
-import { FormManager } from './managers/FormManager';
+import { FormManager } from 'formfiller-embed';
 
-const formManager = new FormManager();
+const formManager = new FormManager(config);
 
+// Al-menedzserek specifikus feladatokat kezelnek:
+// - FormStateManager: Űrlap adat és érték kezelés
+// - FormValidationManager: Validációs logika és hibakövetés
+// - FormVisibilityManager: Mező láthatóság és letiltott állapotok
+```
+
+### Használat
+
+```typescript
 // Mező regisztrálása
 formManager.registerField('firstName', {
   value: '',
   onChange: (value) => console.log('Changed:', value)
 });
 
-// Érték beállítása
+// Érték beállítása (FormStateManager-re delegálva)
 formManager.setValue('firstName', 'John');
 
+// Validáció (FormValidationManager-re delegálva)
+const isValid = await formManager.validateForm();
+
+// Láthatóság ellenőrzése (FormVisibilityManager-re delegálva)
+const isVisible = formManager.isFieldVisible('conditionalField');
+
 // Adatok összegyűjtése
-const formData = formManager.collectData();
+const formData = formManager.collectFormData();
 ```
+
+### Al-menedzser Felelősségek
+
+| Menedzser | Felelősség |
+|-----------|------------|
+| FormStateManager | Űrlap adatok tárolása, érték get/set, adat normalizálás |
+| FormValidationManager | Validáció végrehajtás, hibakövetés, hiba callback-ek |
+| FormVisibilityManager | visibleIf/disabledIf kiértékelés, mező állapot frissítések |
 
 ## Eseménykezelés
 

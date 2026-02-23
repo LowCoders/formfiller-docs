@@ -79,6 +79,23 @@ plugins:
             Traditional (VPS): Hagyományos (VPS)
             Docker: Docker
             Kubernetes: Kubernetes
+            Applicability: Alkalmazhatóság
+            Industries: Iparágak
+            Healthcare: Egészségügy
+            Finance: Pénzügy
+            Education: Oktatás
+            Public Sector: Közszféra
+            HR: HR
+            Telco: Telekommunikáció
+            Grants: Pályázatok
+            Functions: Funkciók
+            Approval Workflow: Jóváhagyási Folyamat
+            Configurator: Konfigurátor
+            CRM: CRM
+            Survey: Kérdőív
+            Ticketing: Jegykezelés
+            Creative Uses: Kreatív Felhasználások
+            Extensions: Bővítmények
   - search
 
 # Markdown extensions
@@ -140,6 +157,26 @@ nav:
     - Traditional (VPS): deployment/traditional.md
     - Docker: deployment/docker.md
     - Kubernetes: deployment/kubernetes.md
+  - Applicability:
+    - Overview: applicability/index.md
+    - Industries:
+      - Overview: applicability/industries/index.md
+      - Healthcare: applicability/industries/healthcare.md
+      - Finance: applicability/industries/finance.md
+      - Education: applicability/industries/education.md
+      - Public Sector: applicability/industries/public-sector.md
+      - HR: applicability/industries/hr.md
+      - Telco: applicability/industries/telco.md
+      - Grants: applicability/industries/grants.md
+    - Functions:
+      - Overview: applicability/functions/index.md
+      - Approval Workflow: applicability/functions/approval-workflow.md
+      - Configurator: applicability/functions/configurator.md
+      - CRM: applicability/functions/crm.md
+      - Survey: applicability/functions/survey.md
+      - Ticketing: applicability/functions/ticketing.md
+    - Creative Uses: applicability/creative-uses.md
+    - Extensions: applicability/extensions.md
 
 # Extra
 extra:

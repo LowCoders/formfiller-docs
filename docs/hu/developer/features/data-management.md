@@ -36,77 +36,39 @@ dataSchema.index({ createdAt: -1 });
 
 ### Teljes Folyamat Diagram
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    DataService.createData() Folyamat                     │
-└─────────────────────────────────────────────────────────────────────────┘
-                                     │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ 1. Config Betöltés                                                       │
-│    ┌─────────────────────────────────────────────────────────────────┐  │
-│    │ Config.findById(configId)                                       │  │
-│    │   .select('preferences siteId')  // Csak szükséges mezők        │  │
-│    │   .lean()                        // Plain object (gyorsabb)     │  │
-│    └─────────────────────────────────────────────────────────────────┘  │
-└────────────────────────────────────┬────────────────────────────────────┘
-                                     │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ 2. Validáció                                                             │
-│    ┌─────────────────────────────────────────────────────────────────┐  │
-│    │ ValidationService.validateFormData(configId, data, options)     │  │
-│    │   • Schema validáció (típusok, kötelező mezők)                  │  │
-│    │   • ValidationRules végrehajtás                                 │  │
-│    │   • ComputedRules számítás                                      │  │
-│    └─────────────────────────────────────────────────────────────────┘  │
-│                              │                                           │
-│               ┌──────────────┴──────────────┐                           │
-│               │                             │                            │
-│            Sikeres                       Sikertelen                      │
-│               │                             │                            │
-│               ▼                             ▼                            │
-│    ┌──────────────────┐          ┌─────────────────────────┐            │
-│    │ Folytatás        │          │ AppError(400)           │            │
-│    │ computedResults  │          │ { validationErrors: [] }│            │
-│    │ mentése          │          └─────────────────────────┘            │
-│    └──────────────────┘                                                  │
-└────────────────────────────────────┬────────────────────────────────────┘
-                                     │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ 3. Save Limit Ellenőrzés                                                 │
-│    ┌─────────────────────────────────────────────────────────────────┐  │
-│    │ if (config.preferences?.saveLimit) {                            │  │
-│    │   const count = await Data.countDocuments({                     │  │
-│    │     configId, userId, isActive: true                            │  │
-│    │   });                                                           │  │
-│    │   if (count >= saveLimit) throw AppError('Save limit reached'); │  │
-│    │ }                                                               │  │
-│    └─────────────────────────────────────────────────────────────────┘  │
-└────────────────────────────────────┬────────────────────────────────────┘
-                                     │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ 4. Data Létrehozás és Mentés                                             │
-│    ┌─────────────────────────────────────────────────────────────────┐  │
-│    │ const dataEntry = new Data({                                    │  │
-│    │   configId,                                                     │  │
-│    │   userId,                                                       │  │
-│    │   data,                                                         │  │
-│    │   isActive: true,                                               │  │
-│    │   siteId: config.siteId,        // Multisite támogatás          │  │
-│    │   computedResults,               // Ha engedélyezett            │  │
-│    │ });                                                             │  │
-│    │ await dataEntry.save();                                         │  │
-│    └─────────────────────────────────────────────────────────────────┘  │
-└────────────────────────────────────┬────────────────────────────────────┘
-                                     │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ 5. Válasz                                                                │
-│    { data: savedData, computedResults?: {...} }                         │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    START["DataService.createData()"]
+    
+    subgraph step1["1. Config Betöltés"]
+        LOAD["Config.findById(configId)<br/>.select('preferences siteId')<br/>.lean()"]
+    end
+    
+    subgraph step2["2. Validáció"]
+        VAL["ValidationService.validateFormData()<br/>• Schema validáció<br/>• ValidationRules<br/>• ComputedRules"]
+        VAL --> VALID{Eredmény}
+        VALID -->|Sikeres| CONT["Folytatás<br/>computedResults mentése"]
+        VALID -->|Sikertelen| ERR["AppError(400)<br/>{ validationErrors }"]
+    end
+    
+    subgraph step3["3. Save Limit Ellenőrzés"]
+        LIMIT["if saveLimit<br/>countDocuments({configId, userId})<br/>if count >= saveLimit → Error"]
+    end
+    
+    subgraph step4["4. Data Létrehozás és Mentés"]
+        SAVE["new Data({configId, userId, data,<br/>isActive, siteId, computedResults})<br/>await dataEntry.save()"]
+    end
+    
+    RESP["5. Válasz<br/>{ data: savedData, computedResults }"]
+    
+    START --> step1
+    step1 --> step2
+    CONT --> step3
+    step3 --> step4
+    step4 --> RESP
+    
+    style ERR fill:#ffcccc,stroke:#cc0000
+    style RESP fill:#ccffcc,stroke:#00cc00
 ```
 
 ### Kód Példa
@@ -430,28 +392,28 @@ if (config.preferences?.saveLimit && userId) {
 
 ### Felhasználói Felületen
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    Save Limit Felhasználói Élmény                        │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ saveLimit: 1, Nincs korábbi beküldés                                │ │
-│  │                                                                      │ │
-│  │ [Űrlap kitöltése...] → [Beküldés] → ✅ Sikeres                      │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ saveLimit: 1, Van korábbi beküldés, allowEdit: true                 │ │
-│  │                                                                      │ │
-│  │ [Korábbi adat betöltése] → [Szerkesztés] → [Mentés] → ✅ Frissítve  │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │ saveLimit: 1, Van korábbi beküldés, allowEdit: false                │ │
-│  │                                                                      │ │
-│  │ [Hibaüzenet: "Már beküldte az űrlapot"] → ❌ Beküldés tiltva        │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph scenarios["Save Limit Felhasználói Élmény"]
+        subgraph s1["saveLimit: 1, Nincs korábbi beküldés"]
+            A1["Űrlap kitöltése"] --> B1["Beküldés"]
+            B1 --> C1["✅ Sikeres"]
+        end
+        
+        subgraph s2["saveLimit: 1, Van korábbi, allowEdit: true"]
+            A2["Korábbi adat betöltése"] --> B2["Szerkesztés"]
+            B2 --> C2["Mentés"]
+            C2 --> D2["✅ Frissítve"]
+        end
+        
+        subgraph s3["saveLimit: 1, Van korábbi, allowEdit: false"]
+            A3["Hibaüzenet:<br/>'Már beküldte az űrlapot'"] --> B3["❌ Beküldés tiltva"]
+        end
+    end
+    
+    style C1 fill:#ccffcc,stroke:#00cc00
+    style D2 fill:#ccffcc,stroke:#00cc00
+    style B3 fill:#ffcccc,stroke:#cc0000
 ```
 
 ## ComputedResults Tárolás
